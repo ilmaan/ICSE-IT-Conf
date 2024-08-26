@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ICSE-ET</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
@@ -32,9 +32,9 @@
         <nav>
           <ul>
             <li><a class="smoothscroll" href="#header">Home</a></li>
-            <li><a class="smoothscroll" href="#about">Track</a></li>
-            <li><a class="smoothscroll" href="#skills">Commitees</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Submissions</a></li>
+            <li><a class="smoothscroll" href="#tracks">Track</a></li>
+            <li><a class="smoothscroll" href="#team">Commitees</a></li>
+            <li><a class="smoothscroll" href="#contact">Submissions</a></li>
             <li><a class="smoothscroll" href="#contact">Registration</a></li>
             <li><a class="smoothscroll" href="#contact">Travel Info</a></li>
           </ul>
@@ -46,13 +46,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{% static 'app/images/csulbslider1.jpg' %}" class="d-block " src="..." alt="First slide">
+                <img src="{% static 'app/images/csulbslider1.jpg' %}" width="800px" height="400px" class="d-block " src="..." alt="First slide">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'app/images/csulbslider1.jpg' %}" class="d-block " src="..." alt="Second slide">
+                <img src="{% static 'app/images/csulbslider2.jpg' %}" width="800px" height="400px" class="d-block " src="..." alt="Second slide">
               </div>
               <div class="carousel-item">
-                <img src="{% static 'app/images/csulbslider1.jpg' %}" class="d-block " src="..." alt="Third slide">
+                <img src="{% static 'app/images/csulbslider3.jpg' %}" width="800px" height="400px" class="d-block " src="..." alt="Third slide">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -105,8 +105,8 @@
           </div>
       </div>
       
-      <h1>Tracks</h1>
-      <div class="row">
+      <h1 id="tracks" >Tracks</h1>
+      <div  class="row">
         
         <div class="six columns">
           <h3><span class="typcn typcn-device-desktop icon"></span>Regular Long Paper</h3>   
@@ -159,12 +159,13 @@
         <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
           <h4>Dr. Shahid</h4>
           <p>shahid@gmail.com</p>
-          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>
+          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
          </div>
         <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
           <h4>Arif</h4>
           <p>arif@gmail.com</p>
-          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
+        </div>
         
           
       </div>
@@ -173,12 +174,13 @@
         <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
           <h4>Mohommad Basit</h4>
           <p>shahid@gmail.com</p>
-          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>
+          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
          </div>
         <div class="three columns"> <img src="http://placehold.it/220x220" width="220" height="220" alt=""/>
           <h4>Saif Ur Rahman khan</h4>
           <p>arif@gmail.com</p>
-          <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> </div>
+          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
+        </div>
         
           
       </div>
@@ -243,7 +245,7 @@
   <!-- Portfolio Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
   
-  <section id="portfolio">
+  <!-- <section id="portfolio">
     <div class="container">
       <h1>Work</h1>
       <div class="block"></div>
@@ -260,12 +262,12 @@
         <div class="three columns"> <img src="http://placehold.it/220x220" class="image" alt="Work Eight"/></div>
       </div>
     </div>
-  </section>
+  </section> -->
   
   <!-- Testimonials Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
   
-  <section id="testimonial">
+  <!-- <section id="testimonial">
     <div class="container">
       <div class="quoteLoop">
         <blockquote class="quote"> <img src="http://placehold.it/100x100" width="100" height="100" alt=""/>
@@ -280,7 +282,7 @@
         </blockquote>
       </div>
     </div>
-  </section>
+  </section> -->
   
   <!-- Contact Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
@@ -315,7 +317,7 @@
   <footer>
     <div class="container">
       <div class="nine columns">
-        <p>Created with love by ILMAAN.</p>
+        <!-- <p>Created with love by ILMAAN.</p> -->
       </div>
       <div class="three columns"> <span class="typcn typcn-social-facebook-circular socialIcons"></span> <span class="typcn typcn-social-instagram-circular socialIcons"></span> <span class="typcn typcn-social-google-plus-circular socialIcons"></span> <span class="typcn typcn-social-linkedin-circular socialIcons"></span> </div>
     </div>
