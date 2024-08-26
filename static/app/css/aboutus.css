@@ -1,0 +1,70 @@
+.row2a{
+    padding: 10vh;
+    /* background: #e6e6e6; */
+}
+
+.row2a li{
+    margin-bottom: 2vh;
+    font-weight: 600    ;
+    list-style-type: circle ;
+}
+
+.row2a1 p{
+    font-weight: 600;
+}
+
+.row3a{
+    background: rgb(144,251,255);
+    /* background: linear-gradient(180deg, rgba(144,251,255,1) 0%, rgba(252,254,255,1) 100%); */
+    background: linear-gradient(to right top, #d16ba5, #ca70b8, #be76cb, #ac7fde, #9288ee, #8687f4, #7686f9, #6385ff, #7177ff, #8764ff, #a149ff, #bd06ff);
+
+    text-align: center;
+    padding: 10vh 5vh;
+}
+
+.aboutu5-img{
+    height: 130px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+
+/* SERVICES CSS */
+
+.row2s{
+    /* text-align: center; */
+    padding: 15vh 5vh;
+}
+
+.row2sp{
+    margin-bottom: 20vh;
+}
+
+.row2s img{
+    -webkit-box-shadow: -20px 20px 35px #dcdcdc, 20px -40px 35px #ffffff;
+    box-shadow: -20px 20px 35px #dcdcdc, 20px -40px 35px #ffffff;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    /* width: 100%; */
+}
+
+.row2s span {
+    font-size: 60px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 100%;
+    border: 1px solid #e8e8e8;
+    width: 100px;
+    height: 100px;
+    display: block;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 0 20px 0;
+    color: #6a6a8e;
+    border-radius: 68% 32% 64% 36% / 59% 59% 41% 41%;
+    background: #f5f5ff;
+    animation: border-transform 6s linear infinite;
+}
+
+.row2s h3{
+    word-wrap: break-word;
+}
