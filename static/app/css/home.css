@@ -223,17 +223,19 @@ header {
 	justify-content: center;
  width: 100%;
 	/* height: 70vh; */
-	background: #e55d87;
+	/* background: #e55d87;
 	background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
 	background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
 	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 ); */
 }
 
 
 .headerlogo {
   text-align: center;
   padding: 5% 4% 1% 4%;
+  text-align: left;
+  margin-left: 20%;
 }
 
 .title {
@@ -365,9 +367,11 @@ nav ul a {
 	text-transform: uppercase;
 	font-size: 12px;
 	text-decoration: none;
+	font-weight: 700;
+	color: darkslategray;
 }
 nav ul a:hover {
-	color: #CFCFCF;
+	color: black;
 }
 .mobile-toggle {
 	display: none;
@@ -703,3 +707,11 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 	margin-bottom: 50px;
 }
 
+
+.list-group-item{
+	border: none;
+}
+
+.tracks{
+	text-align: justify;
+}
