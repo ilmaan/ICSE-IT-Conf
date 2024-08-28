@@ -55,7 +55,7 @@ body {
 	width: 13.3333333333%;
 }
 .three.columns {
-	width: 22%;
+	width: 33%;
 }
 .four.columns {
 	width: 30.6666666667%;
@@ -234,9 +234,14 @@ header {
 .headerlogo {
   text-align: center;
   padding: 5% 4% 1% 4%;
-  text-align: left;
-  margin-left: 20%;
+  /* text-align: left;
+  margin-left: 20%; */
 }
+
+/* .headerlogo img{
+	width: 80%;
+	padding-top: 5%;
+} */
 
 .title {
 	-webkit-align-self: center;
@@ -714,4 +719,33 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 
 .tracks{
 	text-align: justify;
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.techthree.columns {
+	flex: 1 1 calc(33.333% - 20px);
+	box-sizing: border-box;
+	margin: 10px;
+	padding: 10px;
+	/* background-color: #f9f9f9; */
+	/* border: 1px solid #ddd; */
+	/* border-radius: 5px; */
+}
+
+.techthree.columns h4 {
+	margin-bottom: 10px;
+}
+
+.techthree.columns p {
+	margin: 0;
+}
+
+.three.columns img{
+	border-radius: 10px;
 }
