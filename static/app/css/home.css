@@ -211,6 +211,17 @@ a:hover {
 /* Header Section
 ********************************************************************* */
 
+th, td {
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 70px;
+	padding-right: 40px;
+  }
+
+
+  .aboutseet{
+	padding-bottom: 50px;
+  }
 
 header {
 	display: -webkit-box;
@@ -473,7 +484,7 @@ opacity: 0;
 /* Team Section
 ********************************************************************* */
 #team {
-	padding: 50px 0 100px 0;
+	padding: 0px 0 100px 0;
 }
 #team .icon {
 	font-size: 26px;
@@ -754,3 +765,5 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 	font-weight: 600;
 	margin-bottom: 0px;
 }
+
+

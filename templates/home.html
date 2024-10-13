@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEET 2025</title>
+    <title>  SEET 2025</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'app/images/SEET_revmininb.png' %}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
@@ -77,11 +78,19 @@
     
   <section id="about">
     <div class="container">
-      <div class="row">
+      <div class="aboutseet row">
         <h1>About SEET</h1>
         <div class="block"></div>
         <p>The International Conference on  <b>S</b>oftware <b>E</b>ngineering of <b>E</b>merging <b>T</b>echnologies (SEET-2025) will serve as a premier global forum for engineers and scientists from industry and academia to showcase ongoing work, share research insights and experiences, and discuss effective Software Engineering practices. The conference focuses on optimizing development processes by integrating emerging technologies, such as the Internet of Things (IoT), Quantum Computing (QC), Cloud Computing (CC), and Big Data Analytics. SEET-2025 also provides a unique platform for academia to engage with industry practitioners, fostering awareness of key areas critical to the software industry. Additionally, SEET-2025 offers a valuable opportunity for the academic community to gain insight into critical areas of the software industry as practitioners share their current needs and challenges. The conference will take place on August 11-12, 2025, at California State University Long Beach, USA.
         </p>
+
+        <div class="row" >
+          <div class="col-md-1"><img src="{% static 'app\images\springer_logo.jpg' %}" width="100" height="100" alt=""/></div>
+          <div class="col-md-10"><p>
+            You are invited to submit a paper for consideration. Accepted papers will be published by Springer Nature (https://www.springernature.com/) in the proceedings of the 2025 International Conference on Software Engineering of Emerging Technologies (SEET’25).
+          </p></div>
+        </div>
+
       </div>
 
       <div class="row">
@@ -128,7 +137,7 @@
 
         <div class="">
           <h4><span class="typcn typcn-pen icon"></span>Short Paper          </h4>
-          <p>The Short Research Papers track aims to encourage the community to present innovative, thought-provoking, and interdisciplinary themes in concise submissions. These papers may include but are not limited to, critical literature reviews on emerging topics, preliminary theoretical development, or the application of novel analytical methods to existing data. Submit original manuscripts (not published or considered elsewhere) with a minimum of six pages (context and references). The format of your submission must follow the QRS conference proceedings format ( <a href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734" target="_blank">Word DOCX</a> | <a href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678" target="_blank">Latex</a> ).
+          <p>The Short Research Papers track aims to encourage the community to present innovative, thought-provoking, and interdisciplinary themes in concise submissions. These papers may include but are not limited to, critical literature reviews on emerging topics, preliminary theoretical development, or the application of novel analytical methods to existing data. Submit original manuscripts (not published or considered elsewhere) with a minimum of six pages (context and references). The format of your submission must follow the SEET conference proceedings format ( <a href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734" target="_blank">Word DOCX</a> | <a href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678" target="_blank">Latex</a> ).
         </p>
           
         </div>
@@ -155,7 +164,7 @@
               The format of your submission must follow the SEET  conference proceedings format ( <a href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734" target="_blank">Word DOCX</a> | <a href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678" target="_blank">Latex</a> ).
               </p>
         </div>
-        <div class="row">
+        <!-- <div class="row"> -->
           <!-- <div class="six columns">
             <h3><span class="typcn typcn-cog-outline icon"></span>Idea and Vision Paper</h3>
             <p>The objective of short papers is to report novel ideas and results that have not been fully evaluated. Submit original manuscripts (not published or considered elsewhere) with a maximum of ten pages (context and references). Each paper should include a title, the name and affiliation of each author, a 300-word abstract, and up to 6 keywords. The format of your submission must follow the QRS conference proceedings format (PDF | Word DOCX | Latex).</p>
@@ -180,19 +189,19 @@
           </p>
             
           </div> -->
-        </div>
+        <!-- </div> -->
       </div>
     </div>
 
     <div class="container">
+      <h2 class="alert-heading m-1 p-2">Important Dates</h2>
+      <div class="block"></div>
       <div class="row">
         <!-- <h1>About SEET</h1> -->
-        <div class="block"></div>
         <div class="  mb-0 p-0" role="alert">
-          <h2 class="alert-heading m-1 p-2">Important Dates</h2>
-          <hr>
+          <!-- <hr> -->
           <p class="mb-0 p-0 ">
-            <table  cellspacing="0" cellpadding="10">
+            <table  cellspacing="3" cellpadding="10">
               <thead>
                   <tr>
                       <th></th>
@@ -202,7 +211,7 @@
               </thead>
               <tbody>
                   <tr>
-                      <td><strong>Submission</strong></td>
+                      <td><strong>Submission Due</strong></td>
                       <td>March 03, 2025</td>
                       <td>May 12, 2025</td>
                   </tr>
@@ -244,7 +253,7 @@
         <div class="block"></div>
         <!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> -->
       </div>
-      <h2>General Chairs</h2>
+      <h3>General Chairs</h3>
       <div class="row mb-4">
         <div class="three columns"> <img src="{% static 'app\images\shahid-hussain-web.jpg' %}" width="220" height="220" alt=""/>
           <h6>Shahid Hussain, PhD</h6>
@@ -260,7 +269,7 @@
         
           
       </div>
-      <h2>Program Chairs</h2>
+      <h3>Program Chairs</h3>
       <div class="row pt-4">
         <div class="three columns"> <img src="{% static 'app\images\basiturrahim.jpg' %}" width="220" height="220" alt=""/>
           <h6>Muhammad Abdul Basit Ur Rahim, PhD</h6>
@@ -277,7 +286,7 @@
           
       </div>
 
-      <h2>Technical Program Committee</h2>
+      <h3>Technical Program Committee</h3>
       <div class="row">
         <div class="techthree columns"> 
           <h6>Xin Qin, PhD</h6>
