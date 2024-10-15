@@ -8,3 +8,6 @@ def home(request):
 
 def submissions(request):
     return render(request, 'submissions.html')
+
+def tbd(request):
+    return render(request, 'tbd.html')
