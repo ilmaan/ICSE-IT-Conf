@@ -73,7 +73,8 @@ body {
 	width: 65.3333333333%;
 }
 .nine.columns {
-	width: 74.0%;
+	/* width: 74.0%; */
+	text-align: center;
 }
 .ten.columns {
 	width: 82.6666666667%;

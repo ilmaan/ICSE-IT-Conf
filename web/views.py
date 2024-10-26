@@ -15,3 +15,6 @@ def travel(request):
 
 def tbd(request):
     return render(request, 'tbd.html')
+
+def registration(request):
+    return render(request, 'registration.html')
