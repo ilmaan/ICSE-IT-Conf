@@ -9,5 +9,9 @@ def home(request):
 def submissions(request):
     return render(request, 'submissions.html')
 
+
+def travel(request):
+    return render(request, 'travel.html')
+
 def tbd(request):
     return render(request, 'tbd.html')
