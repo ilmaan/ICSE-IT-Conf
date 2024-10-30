@@ -245,10 +245,13 @@ header {
 
 .headerlogo {
   text-align: center;
-  padding: 5% 4% 1% 4%;
+  /* padding: 5% 4% 1% 4%; */
+  margin-top: 5%;
   /* text-align: left;
   margin-left: 20%; */
 }
+
+
 
 /* .headerlogo img{
 	width: 80%;
@@ -404,7 +407,47 @@ nav ul a:hover {
 .mobile-toggle {
 	display: block;
 }
+
+
+.headerlogo{
+
+	margin-top: 5%;
+	margin-bottom: 2%;
+
 }
+
+.headerlogo img{
+	width: 95%;
+}
+
+.title{
+	width: 100%;
+}
+
+
+.carouselimage{
+	width: 100%;
+	height: 300px;
+}
+
+.impdates th, td{
+	padding: 10px;
+}
+
+.impdates{
+	overflow: scroll;
+}
+
+/* .impdates th{
+
+} */
+
+
+}
+
+
+
+
 .mobile-toggle span {
 	width: 30px;
 	height: 4px;
@@ -739,6 +782,8 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
+
+
 
 .techthree.columns {
 	flex: 1 1 calc(33.333% - 20px);
