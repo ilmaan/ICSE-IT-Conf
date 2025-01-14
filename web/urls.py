@@ -11,7 +11,7 @@ urlpatterns = [
     path('tbd',views.tbd,name='tbd'),
     path('unsubscribe',views.unsubscribe,name='unsubscribe'),
     path('subscribe',views.subscribe,name='subscribe'),
-    path('subscribeemails',views.unsubscribe_emails,name='subscribeemails'),
+    path('subscribe-emails',views.unsubscribe_emails,name='subscribeemails'),
     
 
 ]
