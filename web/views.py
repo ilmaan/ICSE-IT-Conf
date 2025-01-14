@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import *
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
@@ -42,7 +42,8 @@ def unsubscribe(request):
             with open(file_path, "a") as file:
                 file.write(email.strip() + "\n")
 
-            return JsonResponse({"message": "Email unsubscribed successfully"}, status=200)
+            # return JsonResponse({"message": "Email unsubscribed successfully"}, status=200)
+            return redirect('/')
 
         except Exception as e:
             return JsonResponse({"error": f"An error occurred: {str(e)}"}, status=500)
@@ -79,7 +80,8 @@ def subscribe(request):
                 with open(file_path, "w") as file:
                     file.writelines(emails)
 
-                return JsonResponse({"message": "Email subscribed successfully"}, status=200)
+                # return JsonResponse({"message": "Email subscribed successfully"}, status=200)
+                return redirect('/')
             else:
                 return JsonResponse({"error": "Email not found in unsubscribe list"}, status=404)
 
