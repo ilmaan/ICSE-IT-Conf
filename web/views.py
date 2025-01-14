@@ -3,6 +3,7 @@ from .models import *
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 import os
+from django.contrib import messages
 # Create your views here.
 
 
@@ -43,6 +44,7 @@ def unsubscribe(request):
                 file.write(email.strip() + "\n")
 
             # return JsonResponse({"message": "Email unsubscribed successfully"}, status=200)
+            messages.success(request, "Email unsubscribed successfully.")
             return redirect('/')
 
         except Exception as e:
