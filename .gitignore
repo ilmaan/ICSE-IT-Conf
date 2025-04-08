@@ -1,0 +1,38 @@
+# Python bytecode
+*.py[cod]
+__pycache__/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+# Database
+db.sqlite3
+
+# Media
+/media
+
+# Static files
+/staticfiles
+
+# Virtual environment
+venv/
+env/
+
+# VS Code settings
+.vscode/
+
+# MacOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Ignore all .env files
+.env
