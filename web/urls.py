@@ -12,6 +12,11 @@ urlpatterns = [
     path('unsubscribe',views.unsubscribe,name='unsubscribe'),
     path('subscribe',views.subscribe,name='subscribe'),
     path('subscribe-emails',views.unsubscribe_emails,name='subscribeemails'),
-    
-
+    path('config/', views.stripe_config),
+    path('create-checkout-session/', views.create_checkout_session, name='create_checkout_session'),
+    path('webhook/', views.stripe_webhook),
+    path('success/', views.SuccessView.as_view()),
+    path('cancelled/', views.CancelledView.as_view()),
+    path('registration_info/', views.registration_info, name='registration_info'),
+    path('check-payment-status/', views.check_payment_status, name='check_payment_status'),
 ]
