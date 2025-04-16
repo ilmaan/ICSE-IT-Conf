@@ -191,10 +191,12 @@ def create_checkout_session(request):
                         'description': 'The International Conference on Software Engineering of Emerging Technologies (SEET-2025) will serve as a premier global forum for engineers and scientists from industry and academia to showcase ongoing work, share research insights and experiences, and discuss effective Software Engineering practices.',
                        'images': ['https://seet25.sw-conf.com/static/app/images/SEET_rev2.png']
                     },
-                    'unit_amount': total_amount * 100, 
+                    'unit_amount': total_amount * 100,
+                    'tax_behavior': 'exclusive',
                 },
                 'quantity': 1,
-            }]
+            }],
+            automatic_tax={'enabled': True}, 
         )
         return JsonResponse({'sessionId': checkout_session['id']})
     except Exception as e:
