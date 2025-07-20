@@ -10,7 +10,6 @@ from django.conf import settings
 from django.views.generic.base import TemplateView
 import json
 from django.views.decorators.http import require_POST
-from django.templatetags.static import static 
 # Create your views here.
 
 
