@@ -174,7 +174,7 @@ def create_checkout_session(request):
     extra_fee = extra_papers * 500
     total_amount = base_fee + extra_fee
 
-    domain_url = 'http://localhost:8000/'
+    domain_url = 'https://seet25.sw-conf.com/'
     stripe.api_key = settings.STRIPE_SECRET_KEY
     try:
         checkout_session = stripe.checkout.Session.create(
