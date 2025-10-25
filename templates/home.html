@@ -1,74 +1,84 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  SEET 2025</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'app/images/SEET_revmininb.png' %}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SEET 2026</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'app/images/SEET_revmininb.png' %}">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" ></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-     <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
 </head>
+
 <body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <div class="container mt-4">
-  {% if messages %}
-      <div>
-          {% for message in messages %}
-              <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
-                  {{ message }}
-                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-          {% endfor %}
+    {% if messages %}
+    <div>
+      {% for message in messages %}
+      <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        {{ message }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
-  {% endif %}
-</div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
 
   <!-- Header Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <nav class="navbar navbar-expand-lg navbar-light ">
     <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
+
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav" style="width: 100%;">
         <nav>
-            <ul>
-              <li><a class="smoothscroll" href="#header">Home</a></li>
-              <li><a class="smoothscroll" href="#tracks">Tracks</a></li>
-              <li><a class="smoothscroll" href="#key_dates">key Dates</a></li>
-              <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
-              <li><a class="smoothscroll" href="#team">Commitees</a></li>
-              <li><a class="smoothscroll" href="/submissions">Submissions</a></li>
-              <li><a class="smoothscroll" href="/registration">Registration</a></li>
-              <li><a class="smoothscroll" href="/travel">Travel & Venue</a></li>
-              
-            </ul>
+          <ul>
+            <li><a class="smoothscroll" href="#header">Home</a></li>
+            <li><a class="smoothscroll" href="#tracks">Tracks</a></li>
+            <li><a class="smoothscroll" href="#key_dates">key Dates</a></li>
+            <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
+            <li><a class="smoothscroll" href="#team">Commitees</a></li>
+            <li><a class="smoothscroll" href="/submissions">Submissions</a></li>
+            <li><a class="smoothscroll" href="/registration">Registration</a></li>
+            <li><a class="smoothscroll" href="/travel">Travel & Venue</a></li>
+
+          </ul>
       </ul>
     </div>
   </nav>
 
-<div class="headerlogo">
+  <div class="headerlogo">
     <img src="{% static 'app/images/SEET_rev2.png' %}" width="1000px" alt="">
-    
-    
-</div>
-<header class="mt-5 pt-3" id="header">
+
+
+  </div>
+  <header class="mt-5 pt-3" id="header">
     <!-- <div class="main_nav sticky">
       <div class="container-flex">
         <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
@@ -92,109 +102,140 @@
 
       </div>
     </div> -->
-    
+
     <div class="title">
-    
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{% static 'app/images/csulbslider1.jpg' %}" width="1000px" height="600px" class="carouselimage d-block " src="..." alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'app/images/csulbslider2.jpg' %}" width="1000px" height="600px" class="carouselimage d-block " src="..." alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img src="{% static 'app/images/csulbslider3.jpg' %}" width="1000px" height="600px" class="carouselimage d-block " src="..." alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'app/images/pennstateslider2.jpg' %}" width="1000px" height="600px"
+              class="carouselimage d-block " src="..." alt="First slide">
           </div>
+          <div class="carousel-item">
+            <img src="{% static 'app/images/pennstateslider1.jpg' %}" width="1000px" height="600px"
+              class="carouselimage d-block " src="..." alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'app/images/pennstateslider3.jpg' %}" width="1000px" height="600px"
+              class="carouselimage d-block " src="..." alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'app/images/pennstateslider4.jpeg' %}" width="1000px" height="600px"
+              class="carouselimage d-block " src="..." alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'app/images/pennstateslider5.jpg' %}" width="1000px" height="600px"
+              class="carouselimage d-block " src="..." alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
 
 
-    
+
     </div>
     <a class="smoothscroll" href="#about">
-    <div class="scroll-down"></div>
-    </a> </header>
-    
+      <div class="scroll-down"></div>
+    </a>
+  </header>
+
   <!-- About Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-    
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <section id="about">
     <div class="container">
       <div class="aboutseet row">
         <h1>About SEET</h1>
         <div class="block"></div>
-        <p style="text-align: justify;">The International Conference on  <b>S</b>oftware <b>E</b>ngineering of <b>E</b>merging <b>T</b>echnologies (SEET-2025) will serve as a premier global forum for engineers and scientists from industry and academia to showcase ongoing work, share research insights and experiences, and discuss effective Software Engineering practices. The conference focuses on optimizing development processes by integrating emerging technologies. SEET-2025 also provides a unique platform for academia to engage with industry practitioners, fostering awareness of key areas critical to the software industry. Additionally, SEET-2025 offers a valuable opportunity for the academic community to gain insight into critical areas of the software industry as practitioners share their current needs and challenges. The conference will take place on August 11-12, 2025, at California State University Long Beach, USA.
+        <p style="text-align: justify;">The International Conference on <b>S</b>oftware <b>E</b>ngineering of
+          <b>E</b>merging <b>T</b>echnologies (SEET-2026) will serve as a premier global forum for engineers and
+          scientists from industry and academia to showcase ongoing work, share research insights and experiences, and
+          discuss effective Software Engineering practices. The conference focuses on optimizing development processes
+          by integrating emerging technologies. SEET-2026 also provides a unique platform for academia to engage with
+          industry practitioners, fostering awareness of key areas critical to the software industry. Additionally,
+          SEET-2026 offers a valuable opportunity for the academic community to gain insight into critical areas of the
+          software industry as practitioners share their current needs and challenges. The conference will take place on
+          August 10-11, 2026, at Penn State University Pennsylvania, USA.
         </p>
 
-        <div class="row" >
-          <div class="col-md-1"><img src="{% static 'app\images\springer_logo.jpg' %}" width="100" height="100" alt=""/></div>
-          <div class="col-md-10"><p style="text-align: justify;">
-            You are invited to submit a paper for consideration. Accepted papers will be published by Springer Nature (https://www.springernature.com/) in the proceedings of the 2025 International Conference on Software Engineering of Emerging Technologies (SEET-25).
-          </p></div>
+        <div class="row">
+          <div class="col-md-1"><img src="{% static 'app\images\springer_logo.jpg' %}" width="100" height="100"
+              alt="" /></div>
+          <div class="col-md-10">
+            <p style="text-align: justify;">
+              You are invited to submit a paper for consideration. Accepted papers will be published by Springer Nature
+              (https://www.springernature.com/) in the proceedings of the 2026 International Conference on Software
+              Engineering of Emerging Technologies (SEET-26).
+            </p>
+          </div>
         </div>
-        
+
         <br><br>
 
-        <div class="row" >
+        <div class="row">
           <div class="col-md-1">
             <!-- <img src="{% static 'app\images\aselogo.webp' %}" width="100" height="150" alt=""/> -->
           </div>
-          <div class="col-md-10"><p style="text-align: justify;">
-            Authors of top-quality papers will be invited to submit extended versions for publication in special issues of SCI-indexed journals.
-          </p></div>
+          <div class="col-md-10">
+            <p style="text-align: justify;">
+              Authors of top-quality papers will be invited to submit extended versions for publication in special
+              issues of SCI-indexed journals.
+            </p>
+          </div>
         </div>
 
       </div>
 
-             <!-- Gallery Section -->
-       <div class="row" id="gallery">
-         <h1>Gallery</h1>
-         <div class="block"></div>
-         
-                   <!-- Gallery Link and Note -->
-          <div class="gallery-info mb-4">
-            <div class="gallery-download-section">
-              <div class="download-content">
-                <h5><i class="fas fa-download"></i> Download All Photos</h5>
-                <p>Access all conference photos and download them from our shared gallery</p>
-                <a href="https://csulb-my.sharepoint.com/personal/muhammad_abdulbasiturrahim_csulb_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmuhammad%5Fabdulbasiturrahim%5Fcsulb%5Fedu%2FDocuments%2FDesktop%2FSEET%20Photo%2FPictures%20for%20website&ga=1" 
-                   target="_blank" class="download-btn">
-                  <i class="fas fa-external-link-alt"></i> View Full Gallery
-                </a>
-                <div class="validity-note">
-                  <i class="fas fa-clock"></i> <strong>Note:</strong> This link will be valid until September 30, 2025
-                </div>
+      <!-- Gallery Section -->
+      <!-- <div class="row" id="gallery">
+        <h1>Gallery</h1>
+        <div class="block"></div> -->
+
+      <!-- Gallery Link and Note -->
+      <!-- <div class="gallery-info mb-4">
+          <div class="gallery-download-section">
+            <div class="download-content">
+              <h5><i class="fas fa-download"></i> Download All Photos</h5>
+              <p>Access all conference photos and download them from our shared gallery</p>
+              <a href="https://csulb-my.sharepoint.com/personal/muhammad_abdulbasiturrahim_csulb_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmuhammad%5Fabdulbasiturrahim%5Fcsulb%5Fedu%2FDocuments%2FDesktop%2FSEET%20Photo%2FPictures%20for%20website&ga=1"
+                target="_blank" class="download-btn">
+                <i class="fas fa-external-link-alt"></i> View Full Gallery
+              </a>
+              <div class="validity-note">
+                <i class="fas fa-clock"></i> <strong>Note:</strong> This link will be valid until September 30, 2025
               </div>
             </div>
           </div>
-         
-         <div class="gallery-container">
+        </div>
+
+        <div class="gallery-container">
           <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-                         <ol class="carousel-indicators">
-               <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#galleryCarousel" data-slide-to="1"></li>
-               <li data-target="#galleryCarousel" data-slide-to="2"></li>
-             </ol>
-                                                   <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="{% static 'app/images/IMG_5511.JPG' %}" class="d-block w-100 gallery-carousel-image" alt="Gallery Image 1">
-                </div>
-                <div class="carousel-item">
-                  <img src="{% static 'app/images/IMG_5696.JPG' %}" class="d-block w-100 gallery-carousel-image" alt="Gallery Image 2">
-                </div>
-                <div class="carousel-item">
-                  <img src="{% static 'app/images/IMG_6067.JPG' %}" class="d-block w-100 gallery-carousel-image" alt="Gallery Image 3">
-                </div>
+            <ol class="carousel-indicators">
+              <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#galleryCarousel" data-slide-to="1"></li>
+              <li data-target="#galleryCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'app/images/IMG_5511.JPG' %}" class="d-block w-100 gallery-carousel-image"
+                  alt="Gallery Image 1">
               </div>
+              <div class="carousel-item">
+                <img src="{% static 'app/images/IMG_5696.JPG' %}" class="d-block w-100 gallery-carousel-image"
+                  alt="Gallery Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'app/images/IMG_6067.JPG' %}" class="d-block w-100 gallery-carousel-image"
+                  alt="Gallery Image 3">
+              </div>
+            </div>
             <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
@@ -205,57 +246,58 @@
             </a>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div class="row">
+      <!-- <div class="row">
         <h1>Keynote Speakers</h1>
-        <div class="block"></div> 
+        <div class="block"></div>
 
         <div class="container-flex team">
 
           <div class="row mb-4" style="width:-webkit-fill-available;">
-          <div class="four columns mb-4">
-            <img src="{% static 'app/images/YanLiu_crop.jpeg' %}" width="220" height="220" alt=""/>
-            <h6>Dr. Yan Liu </h6>
-            <p>
+            <div class="four columns mb-4">
+              <img src="{% static 'app/images/YanLiu_crop.jpeg' %}" width="220" height="220" alt="" />
+              <h6>Dr. Yan Liu </h6>
+              <p>
 
-              Professor, Thomas Lord Department of Computer Science
-              <br>
-              Director, USC Machine Learning Center, Viterbi School of Engineering
-            <br>  
-              University of Southern California
-            </p>
+                Professor, Thomas Lord Department of Computer Science
+                <br>
+                Director, USC Machine Learning Center, Viterbi School of Engineering
+                <br>
+                University of Southern California
+              </p>
+            </div>
+            <div class="four columns mb-4">
+              <img src="{% static 'app/images/Sohini.jpg' %}" width="220" height="220" alt="" />
+              <h6>Dr. Sohini Roychowdhury</h6>
+              <p>
+                Lead Engineer, Meta Platforms, Inc</p>
+            </div>
+            <div class="four columns mb-4">
+              <img src="{% static 'app/images/Dr. Atif Mohammad.png' %}" width="220" height="220" alt="" />
+              <h6>Dr. Atif Farid Mohammad</h6>
+              <p>
+                Chief AI Officer
+                <br>
+                Global Technology Solutions Inc. (GTS) – (Full time)
+                <br>
+                Professor Quantum Computing / AI – (Part time)
+              </p>
+            </div>
           </div>
-          <div class="four columns mb-4">
-            <img src="{% static 'app/images/Sohini.jpg' %}" width="220" height="220" alt=""/>
-            <h6>Dr. Sohini Roychowdhury</h6>
-            <p>
-              Lead Engineer, Meta Platforms, Inc</p>
-          </div>
-          <div class="four columns mb-4">
-            <img src="{% static 'app/images/Dr. Atif Mohammad.png' %}" width="220" height="220" alt=""/>
-            <h6>Dr. Atif Farid Mohammad</h6>
-            <p>              
-              Chief AI Officer
-              <br>
-              Global Technology Solutions Inc. (GTS) – (Full time)
-              <br>
-              Professor Quantum Computing / AI – (Part time)</p>
-          </div>
+
         </div>
 
-        </div>
 
-
-        </div>
+      </div> -->
 
       <div class="row">
         <h1>Topics of Interest</h1>
         <div class="block"></div>
         <div class="list-group w-100 p-3 mb-5">
-            
 
-            <!-- <p  class="list-group-item list-group-item mb-1">·       Software Engineering for Quantum Computing Application</p>
+
+          <!-- <p  class="list-group-item list-group-item mb-1">·       Software Engineering for Quantum Computing Application</p>
             <p  class="list-group-item list-group-item mb-1">·       Software Engineering for the Internet of Things</p>
             <p  class="list-group-item list-group-item mb-1">·       Evidence-Based Software Engineering</p>
             <p  class="list-group-item list-group-item mb-1">·       Search-Based Software Engineering</p>
@@ -273,61 +315,94 @@
             <p  class="list-group-item list-group-item mb-1">·       LLM-Based Software Engineering</p>
             <p  class="list-group-item list-group-item mb-1">·       Generative AI for software development</p>
             <p  class="list-group-item list-group-item mb-1">·       Social Technical (Soci-Tec) Challenges for Emerging Technologies</p> -->
-            
-<p  class="list-group-item list-group-item mb-1">.   Software Engineering for Quantum Computing Application</p>
-<p  class="list-group-item list-group-item mb-1">.   Software Engineering for the Internet of Things</p>
-<p  class="list-group-item list-group-item mb-1">.   Cloud Computing in Software Development</p>
-<p  class="list-group-item list-group-item mb-1">.   DevOps for Cloud Computing</p>
-<p  class="list-group-item list-group-item mb-1">.   LLM-Based Software Engineering</p>
-<p  class="list-group-item list-group-item mb-1">.   AI for software development</p>
-<p  class="list-group-item list-group-item mb-1">.   Integrating Machine Learning into Software Systems</p>
-<p  class="list-group-item list-group-item mb-1">.   Software Engineering for Augmented Reality/ Virtual Reality Applications</p>
-<p  class="list-group-item list-group-item mb-1">.   Blockchain Software Development and Decentralized Systems</p>
-<p  class="list-group-item list-group-item mb-1">.   Autonomous Vehicle Software and Control Systems</p>
-<p  class="list-group-item list-group-item mb-1">.   Big Data Engineering and Analytics Solutions</p>
-<p  class="list-group-item list-group-item mb-1">.   Software Solutions in Biotechnology and Bioinformatics</p>
-<p  class="list-group-item list-group-item mb-1">.   Robotics Software Design and Development</p>
-<p  class="list-group-item list-group-item mb-1">.   Agent-based system</p>
-<p  class="list-group-item list-group-item mb-1">.   Cybersecurity Engineering for Software Systems</p>
-<p  class="list-group-item list-group-item mb-1">.   Edge Computing Software Architectures</p>
-<p  class="list-group-item list-group-item mb-1">.   Evidence-Based Software Engineering</p>
-<p  class="list-group-item list-group-item mb-1">.   Search-Based Software Engineering</p>
-<p  class="list-group-item list-group-item mb-1">.   Software Engineering for 5G Expansion</p>
-<p  class="list-group-item list-group-item mb-1">.   Software Tools and Techniques for Gene Editing</p>
-<p  class="list-group-item list-group-item mb-1">.   Emerging Technologies Integration in Software Development</p>
-<p  class="list-group-item list-group-item mb-1">.   Risk Management for Integrating Emerging Technologies</p>
-<p  class="list-group-item list-group-item mb-1">.   Formal Methods</p>
-<p  class="list-group-item list-group-item mb-1">.   Requirement Engineering</p>
-<p  class="list-group-item list-group-item mb-1">.   Effort and Cost Measurement (Metrics)</p>
-<p  class="list-group-item list-group-item mb-1">.   Process and Quantity Issues</p>
-<p  class="list-group-item list-group-item mb-1">.   Software Fault Prediction</p>
-<p  class="list-group-item list-group-item mb-1">.   Software Maintenance and Evolution</p>
-<p  class="list-group-item list-group-item mb-1">.   Software Testing and Quality Assurance</p>
 
+          <p class="list-group-item list-group-item mb-1">. Software Engineering for Quantum Computing Application</p>
+          <p class="list-group-item list-group-item mb-1">. Software Engineering for the Internet of Things</p>
+          <p class="list-group-item list-group-item mb-1">. Cloud Computing in Software Development</p>
+          <p class="list-group-item list-group-item mb-1">. DevOps for Cloud Computing</p>
+          <p class="list-group-item list-group-item mb-1">. LLM-Based Software Engineering</p>
+          <p class="list-group-item list-group-item mb-1">. AI for software development</p>
+          <p class="list-group-item list-group-item mb-1">. Integrating Machine Learning into Software Systems</p>
+          <p class="list-group-item list-group-item mb-1">. Software Engineering for Augmented Reality/ Virtual Reality
+            Applications</p>
+          <p class="list-group-item list-group-item mb-1">. Blockchain Software Development and Decentralized Systems
+          </p>
+          <p class="list-group-item list-group-item mb-1">. Autonomous Vehicle Software and Control Systems</p>
+          <p class="list-group-item list-group-item mb-1">. Big Data Engineering and Analytics Solutions</p>
+          <p class="list-group-item list-group-item mb-1">. Software Solutions in Biotechnology and Bioinformatics</p>
+          <p class="list-group-item list-group-item mb-1">. Robotics Software Design and Development</p>
+          <p class="list-group-item list-group-item mb-1">. Agent-based system</p>
+          <p class="list-group-item list-group-item mb-1">. Cybersecurity Engineering for Software Systems</p>
+          <p class="list-group-item list-group-item mb-1">. Edge Computing Software Architectures</p>
+          <p class="list-group-item list-group-item mb-1">. Evidence-Based Software Engineering</p>
+          <p class="list-group-item list-group-item mb-1">. Search-Based Software Engineering</p>
+          <p class="list-group-item list-group-item mb-1">. Software Engineering for 5G Expansion</p>
+          <p class="list-group-item list-group-item mb-1">. Software Tools and Techniques for Gene Editing</p>
+          <p class="list-group-item list-group-item mb-1">. Emerging Technologies Integration in Software Development
+          </p>
+          <p class="list-group-item list-group-item mb-1">. Risk Management for Integrating Emerging Technologies</p>
+          <p class="list-group-item list-group-item mb-1">. Formal Methods</p>
+          <p class="list-group-item list-group-item mb-1">. Requirement Engineering</p>
+          <p class="list-group-item list-group-item mb-1">. Sustainable Requirement Engineering</p>
+          <p class="list-group-item list-group-item mb-1">. Effort and Cost Measurement (Metrics)</p>
+          <p class="list-group-item list-group-item mb-1">. Process and Quantity Issues</p>
+          <p class="list-group-item list-group-item mb-1">. Software Fault Prediction</p>
+          <p class="list-group-item list-group-item mb-1">. Software Maintenance and Evolution</p>
+          <p class="list-group-item list-group-item mb-1">. Software Testing and Quality Assurance</p>
+
+
+        </div>
+      </div>
+
+      <h1 id="tracks">Tracks</h1>
+      <div class="block"></div>
+      <div class="row tracks">
+        <div class="six columns">
+          <h4><span class="typcn typcn-device-desktop icon"></span>Regular Paper</h4>
+          <p>The Regular Research Papers track provides a platform for researchers to present comprehensive studies that
+            contribute original findings, in-depth analyses, and significant advancements in the field. Submissions are
+            expected to include rigorous methodologies, detailed results, and thorough discussions that advance the
+            understanding of established or emerging topics, offering both theoretical and practical contributions to
+            the discipline. Submit original manuscripts (not published or considered elsewhere) with a minimum of twelve
+            pages (context and references). The format of your submission must follow the SEET conference proceedings
+            format ( <a
+              href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734"
+              target="_blank">Word DOCX</a> | <a
+              href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678"
+              target="_blank">Latex</a> ).
+          </p>
+
+          <div class="">
+            <h4><span class="typcn typcn-cog-outline icon"></span>Idea and Vision Paper</h4>
+            <p>The Vision and Idea Papers track invites the research community to present pioneering concepts,
+              speculative ideas, and forward-looking perspectives that have the potential to shape future research
+              directions. Submissions may include but are not limited to, conceptual frameworks that propose novel
+              approaches, speculative insights into emerging challenges, or visionary perspectives that seek to redefine
+              current paradigms within the field. Submit original manuscripts (not published or considered elsewhere)
+              with a minimum of six pages (context and references). The format of your submission must follow the SEET
+              conference proceedings format (<a
+                href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734"
+                target="_blank">Word DOCX</a> | <a
+                href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678"
+                target="_blank">Latex</a> ).</p>
 
           </div>
-      </div>
-      
-      <h1 id="tracks" >Tracks</h1>
-      <div class="block"></div>
-      <div  class="row tracks">
-        <div class="six columns">
-          <h4><span class="typcn typcn-device-desktop icon"></span>Regular Paper</h4>   
-          <p>The Regular Research Papers track provides a platform for researchers to present comprehensive studies that contribute original findings, in-depth analyses, and significant advancements in the field. Submissions are expected to include rigorous methodologies, detailed results, and thorough discussions that advance the understanding of established or emerging topics, offering both theoretical and practical contributions to the discipline. Submit original manuscripts (not published or considered elsewhere) with a minimum of twelve pages (context and references). The format of your submission must follow the SEET conference proceedings format ( <a href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734" target="_blank">Word DOCX</a> | <a href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678" target="_blank">Latex</a> ).
-        </p>
 
-        <div class="">
-          <h4><span class="typcn typcn-cog-outline icon"></span>Idea and Vision Paper</h4>
-          <p>The Vision and Idea Papers track invites the research community to present pioneering concepts, speculative ideas, and forward-looking perspectives that have the potential to shape future research directions. Submissions may include but are not limited to, conceptual frameworks that propose novel approaches, speculative insights into emerging challenges, or visionary perspectives that seek to redefine current paradigms within the field. Submit original manuscripts (not published or considered elsewhere) with a minimum of six pages (context and references). The format of your submission must follow the SEET conference proceedings format (<a href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734" target="_blank">Word DOCX</a> | <a href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678" target="_blank">Latex</a> ).</p>
-        
-        </div>
+          <div class="">
+            <h4><span class="typcn typcn-pen icon"></span>Short Paper </h4>
+            <p>The Short Research Papers track aims to encourage the community to present innovative, thought-provoking,
+              and interdisciplinary themes in concise submissions. These papers may include but are not limited to,
+              critical literature reviews on emerging topics, preliminary theoretical development, or the application of
+              novel analytical methods to existing data. Submit original manuscripts (not published or considered
+              elsewhere) with a minimum of six pages (context and references). The format of your submission must follow
+              the SEET conference proceedings format ( <a
+                href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734"
+                target="_blank">Word DOCX</a> | <a
+                href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678"
+                target="_blank">Latex</a> ).
+            </p>
 
-        <div class="">
-          <h4><span class="typcn typcn-pen icon"></span>Short Paper          </h4>
-          <p>The Short Research Papers track aims to encourage the community to present innovative, thought-provoking, and interdisciplinary themes in concise submissions. These papers may include but are not limited to, critical literature reviews on emerging topics, preliminary theoretical development, or the application of novel analytical methods to existing data. Submit original manuscripts (not published or considered elsewhere) with a minimum of six pages (context and references). The format of your submission must follow the SEET conference proceedings format ( <a href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734" target="_blank">Word DOCX</a> | <a href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678" target="_blank">Latex</a> ).
-        </p>
-          
-        </div>
+          </div>
 
         </div>
         <!-- <div class="six columns">
@@ -337,34 +412,44 @@
           
         </div> -->
         <!-- <div class="six columns"> -->
-          <h4 style="text-align: left;"><span class="typcn typcn-lightbulb icon"></span style="text-align:left;" >Student Research Competition</h4>
-          <p>The Student Research Competition (SRC) offers a unique forum for undergraduate and graduate students to present their original research before a panel of judges and conference attendees. The SRC track provides participants with a chance to meet other students and get direct feedback on their work from experts. The steps to participate in SRC are as follows.
-              <ul>
-                  
-                  <!-- <li>Submission through the system </li> -->
-                  <li>Undergraduate and graduate-level students can submit SRC articles. </li>
-                  <li>On the first day, the author of accepted articles will join the poster session, where a team of judges will select the top 5 articles. </li>
-                  <li>On the second day, the authors of the selected article will do an oral presentation, and the top articles will be announced for rewards and certificates. </li>
+        <h4 style="text-align: left;"><span class="typcn typcn-lightbulb icon"></span style="text-align:left;">Student
+          Research Competition</h4>
+        <p>The Student Research Competition (SRC) offers a unique forum for undergraduate and graduate students to
+          present their original research before a panel of judges and conference attendees. The SRC track provides
+          participants with a chance to meet other students and get direct feedback on their work from experts. The
+          steps to participate in SRC are as follows.
+        <ul>
 
-              </ul>
-              <!-- Each paper should include a title, the name and affiliation of each author, a 300-word abstract, and up to 6 keywords.  -->
-               <p>
-                The format of your submission must follow the SEET  conference proceedings format 
-              (<a style="text-align: left;" href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734" target="_blank">Word DOCX</a>|<a href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678" target="_blank">Latex</a> ).
+          <!-- <li>Submission through the system </li> -->
+          <li>Undergraduate and graduate-level students can submit SRC articles. </li>
+          <li>On the first day, the author of accepted articles will join the poster session, where a team of judges
+            will select the top 5 articles. </li>
+          <li>On the second day, the authors of the selected article will do an oral presentation, and the top articles
+            will be announced for rewards and certificates. </li>
 
-               </p>
-              
-              
-                
-            </p>
+        </ul>
+        <!-- Each paper should include a title, the name and affiliation of each author, a 300-word abstract, and up to 6 keywords.  -->
+        <p>
+          The format of your submission must follow the SEET conference proceedings format
+          (<a style="text-align: left;"
+            href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734"
+            target="_blank">Word DOCX</a>|<a
+            href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678"
+            target="_blank">Latex</a> ).
+
+        </p>
+
+
+
+        </p>
         <!-- </div> -->
         <!-- <div class="row"> -->
-          <!-- <div class="six columns">
+        <!-- <div class="six columns">
             <h3><span class="typcn typcn-cog-outline icon"></span>Idea and Vision Paper</h3>
             <p>The objective of short papers is to report novel ideas and results that have not been fully evaluated. Submit original manuscripts (not published or considered elsewhere) with a maximum of ten pages (context and references). Each paper should include a title, the name and affiliation of each author, a 300-word abstract, and up to 6 keywords. The format of your submission must follow the QRS conference proceedings format (PDF | Word DOCX | Latex).</p>
           
           </div> -->
-          <!-- <div class="six columns">
+        <!-- <div class="six columns">
             <h3><span class="typcn typcn-lightbulb icon"></span>Student Research Competition</h3>
             <p>The Student Research Competition (SRC) offers a unique forum for undergraduate and graduate students to present their original research before a panel of judges and attendees at conference. The SRC track provides participants a chance to meet other students and to get direct feedback on their work from experts. The steps to participate in SRC as follow.
                 <ul>
@@ -377,7 +462,7 @@
                 Each paper should include a title, the name and affiliation of each author, a 300-word abstract, and up to 6 keywords. The format of your submission must follow the QRS conference proceedings format (PDF | Word DOCX | Latex).Submission
                 </p>
           </div> -->
-          <!-- <div class="six columns">
+        <!-- <div class="six columns">
             <h3><span class="typcn typcn-pen icon"></span>Short Paper          </h3>
             <p>The objective of short papers is to report novel ideas and results that have not been fully evaluated. Submit original manuscripts (not published or considered elsewhere) with a maximum of ten pages (context and references). Each paper should include a title, the name and affiliation of each author, a 300-word abstract, and up to 6 keywords. The format of your submission must follow the QRS conference proceedings format (PDF | Word DOCX | Latex).
           </p>
@@ -388,58 +473,58 @@
     </div>
 
     <div class="container" id="key_dates">
-      <h2 class="alert-heading m-1 p-2" >Important Dates</h2>
+      <h2 class="alert-heading m-1 p-2">Important Dates</h2>
       <div class="block"></div>
       <div class="row impdates">
         <!-- <h1>About SEET</h1> -->
         <div class="  mb-0 p-0" role="alert">
           <!-- <hr> -->
           <p class="mb-0 p-0 ">
-            <table  cellspacing="3" cellpadding="10">
-              <thead>
-                  <tr>
-                      <th></th>
-                      <th>Round 1</th>
-                      <th>Round 2</th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <td><strong>Submission Due</strong></td>
-                      <td><s>March 03, 2025</s> <s>March 17, 2025</s></td>
-		      <td><s>May 12, 2025</s> <s>May 19, 2025</s></td>
-                  </tr>
-                  <tr>
-                      <td><strong>Notification</strong></td>
-                      <td><s>April 07, 2025</s></td> 
-                      <td>June 23, 2025</td>
-                  </tr>
-                  <tr>
-                      <td><strong>Registration</strong></td>
-                      <td>May 05, 2025</td>
-                      <td>July 21, 2025</td>
-                  </tr>
-                  <tr>
-                      <td><strong>Camera-ready</strong></td>
-                      <td>May 05, 2025</td>
-                      <td>July 21, 2025</td>
-                  </tr>
-              </tbody>
+          <table cellspacing="3" cellpadding="10" style="width: 100%;">
+            <thead>
+              <tr>
+                <th></th>
+                <!-- <th>Round 1</th>
+                <th>Round 2</th> -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Submission Due</strong></td>
+                <td>May 18, 2026
+                <!-- <td><s>May 12, 2025</s> <s>May 19, 2025</s></td> -->
+              </tr>
+              <tr>
+                <td><strong>Notification</strong></td>
+                <td>June 19, 2026</s></td>
+                <!-- <td>June 23, 2025</td> -->
+              </tr>
+              <tr>
+                <td><strong>Registration</strong></td>
+                <td>June 30, 2026</td>
+                <!-- <td>July 21, 2025</td> -->
+              </tr>
+              <tr>
+                <td><strong>Camera-ready</strong></td>
+                <td>June 30, 2026</td>
+                <!-- <td>July 21, 2025</td> -->
+              </tr>
+            </tbody>
           </table>
-          
+
           </p>
         </div>
       </div>
-      </div>
+    </div>
 
 
 
 
   </section>
-  
+
   <!-- Team Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <section id="team" class="team">
     <div class="container">
       <div class="row">
@@ -447,110 +532,140 @@
         <div class="block"></div>
         <!-- <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> -->
       </div>
-      <h3>General Chairs</h3>
+      <h3>Steering Committee</h3>
       <div class="row mb-4">
-        <div class="three columns"> <img src="{% static 'app\images\shahid-hussain-web.jpg' %}" width="220" height="220" alt=""/>
+        <div class="three columns"> <img src="{% static 'app\images\shahid-hussain-web.jpg' %}" width="220" height="220"
+            alt="" />
           <h6>Shahid Hussain, PhD</h6>
           <p>shussain@psu.edu <br>Penn State University, Behrend, Erie, USA</p>
           <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
-         </div>
-        <div class="three columns"> <img src="{% static 'app\images\arif_ali_khan.jpg' %}" width="220" height="220" alt=""/>
+        </div>
+        <div class="three columns"> <img src="{% static 'app\images\arif_ali_khan.jpg' %}" width="220" height="220"
+            alt="" />
           <h6>Arif Ali Khan, PhD</h6>
           <p>arif.khan@oulu.fi<br>University of Oulu, Finland</p>
           <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
         </div>
-        
-        
-          
       </div>
-      <h3>Program Chairs</h3>
       <div class="row pt-4">
-        <div class="three columns"> <img src="{% static 'app\images\basiturrahim.jpg' %}" width="220" height="220" alt=""/>
+        <div class="three columns"> <img src="{% static 'app\images\basiturrahim.jpg' %}" width="220" height="220"
+            alt="" />
           <h6>Muhammad Abdul Basit Ur Rahim, PhD</h6>
           <p>m.basit@csulb.edu<br>California State University, Long Beach, USA</p>
           <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
-         </div>
-        <div class="three columns"> <img src="{% static 'app\images\saif_ur_rahman_new.jpg' %}" width="220" height="220" alt=""/>
+        </div>
+        <div class="three columns"> <img src="{% static 'app\images\saif_ur_rahman_new.jpg' %}" width="220" height="220"
+            alt="" />
           <h6>Saif Ur Rehman Khan, PhD</h6>
           <p>saif_rehman.ssc@stmu.edu.pk <br>Shifa Tameer-e-Millat University (STMU), Islamabad, Pakistan
           </p>
           <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
         </div>
-        
-          
+
+
+      </div>
+      <div class="row pt-4 justify-content-center" style="text-align: center;">
+        <div class="three columns mx-5">
+          <h3>General Chair</h3>
+          <img src="{% static 'app\images\timothy_kurzweg.jpg' %}" width="200" height="220" alt="" />
+          <h6>Timothy Kurzweg, PhD</h6>
+          <p>James R. Meehl Director, School of Engineering, Penn State Erie</p>
+          <p>tpk103@psu.edu<br>Penn State University, Pennsylvania, USA</p>
+          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
+        </div>
+        <div class="three columns mx-5">
+          <h3>Industry Liaison Chair</h3>
+          <img src="{% static 'app\images\russell-martin.jpg' %}" width="200" height="220" alt="" />
+          <h6>Russell Martin, PhD</h6>
+          <p>rcm204@psu.edu<br>Penn State University, Pennsylvania, USA</p>
+          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
+        </div>
       </div>
 
-      <h3>Regular Paper Track Chairs</h3>
+      <h3>Program Chairs</h3>
       <div class="row pt-4">
-        <div class="three columns"> <img src="{% static 'app\images\Muhammad-Imran_GC.jpg' %}" width="220" height="220" alt=""/>
-          <h6>Muhammad Imran, PhD</h6>
-          <p>m.imran@federation.edu.au<br>Federation University, Australia</p>
+        <div class="three columns"> <img src="{% static 'app\images\naseem_ibrahim.jpg' %}" width="220" height="220"
+            alt="" />
+          <h6>Naseem Ibrahim, PhD</h6>
+          <p>nii1@psu.edu<br>Penn State University, Pennsylvania, USA</p>
           <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
-         </div>
-        <div class="three columns"> <img src="{% static 'app\images\azeem.jpg' %}" width="220" height="220" alt=""/>
-          <h6>Azeem Akbar, PhD</h6>
-          <p>Azeem.Akbar@lut.fi <br>Lappeenranta University of Technology, Finland</p>
+        </div>
+        <div class="three columns"> <img src="{% static 'app\images\MansoorAhmed.png' %}" width="220" height="220" alt="" />
+          <h6>Mansoor Ahmad, PhD</h6>
+          <p>mansoor.ahmed@mu.ie<br>Maynooth University, Ireland</p>
           <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
         </div>
-        
-          
-      </div>
 
-      <h3>Idea and Vision Track</h3>
-      <div class="row pt-4">
-        <div class="three columns"> <img src="{% static 'app\images\wen_li_wang.jpg' %}" width="220" height="220" alt=""/>
+        <h3>Regular Paper Track Chairs</h3>
+        <div class="row pt-4">
+          <div class="three columns"> <img src="{% static 'app\images\wen_li_wang.jpg' %}" width="220" height="220"
+            alt="" />
           <h6>Wen-li Wang, PhD </h6>
           <p>wxw18@psu.edu<br>Penn State University, Behrend, USA</p>
           <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
-         </div>
-        <div class="three columns"> <img src="{% static 'app\images\Mei-Huei Tang.jpg' %}" width="220" height="220" alt=""/>
-          <h6>Mei-Huei Tang, PhD</h6>
-          <p>tang002@gannon.edu <br>Gannon University</p>
-          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
         </div>
-        
-          
+        <div class="three columns"> <img src="{% static 'app\images\muhammad-abid.webp' %}" width="220" height="220"
+          alt="" />
+        <h6>Muhammad Abid, PhD</h6>
+        <p>mabid@floridapoly.edu<br>Florida Polytechnic University, USA</p>
+        <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
       </div>
 
-      <h3>Short Paper Track</h3>
-      <div class="row pt-4">
-        <div class="three columns"> <img src="{% static 'app\images\xin qin.jpg' %}" width="220" height="220" alt=""/>
-          <h6>Xin Qin, PhD</h6>
-          <p>xin.qin@csulb.edu<br>California State University Long Beach, USA</p>
-          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
-         </div>
-        <div class="three columns"> <img src="{% static 'app\images\muhammad-abid.webp' %}" width="220" height="220" alt=""/>
-          <h6>Muhammad Abid, PhD</h6>
-          <p>mabid@floridapoly.edu<br>Florida Polytechnic University, USA</p>
-          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
-        </div>
-        
-          
-      </div>
 
-      <h3>Student Research Competition</h3>
-      <div class="row pt-4">
-        <div class="three columns"> <img src="{% static 'app\images\Souti.jpg' %}" width="220" height="220" alt=""/>
-          <h6>Souti Rini Chattopadhyay, PhD</h6>
-          <p>schattop@usc.edu<br>University of Southern California, USA</p>
-          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
-         </div>
-        <div class="three columns"> <img src="{% static 'app\images\tairun liu.jpg' %}" width="220" height="220" alt=""/>
-          <h6>Tairan Liu, PhD </h6>
-          <p>tairan.liu@csulb.edu<br>California State University Long Beach, USA</p>
-          <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
         </div>
-        
-          
-      </div>
 
-      <h3>Technical Program Committee</h3>
-      <div class="row">
-        <div class="techthree columns"> 
-          <h6> Waqar Ali, PhD </h6>
-          <p>Zurich University of Applied Sciences, Switzerland.</p>
-      </div>
-        <!-- <div class="techthree columns"> 
+        <h3>Idea and Vision Track</h3>
+        <div class="row pt-4">
+          <div class="three columns"> <img src="{% static 'app\images\Marjan.jpg' %}" width="220" height="220"
+              alt="" />
+            <h6>Marjan Asadinia, PhD </h6>
+            <p>marjan.asadinia@csun.edu<br>California State University, Northridge, USA</p>
+            <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
+          </div>
+
+
+
+        </div>
+
+        <h3>Short Paper Track</h3>
+        <div class="row pt-4">
+          <div class="three columns"> <img src="{% static 'app\images\Kenneth.jpeg' %}" width="220" height="220"
+              alt="" />
+            <h6>kenneth Ballou, PhD</h6>
+            <p>kballou@csusm.edu<br>California State University San Marcos, USA</p>
+            <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
+          </div>
+          <div class="three columns"> <img src="{% static 'app\images\xin qin.jpg' %}" width="220" height="220" alt=""/>
+            <h6>Xin Qin, PhD</h6>
+            <p>xin.qin@csulb.edu<br>California State University Long Beach, USA</p>
+            <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span> -->
+           </div>
+        </div>
+
+        <h3>Student Research Competition</h3>
+        <div class="row pt-4">
+          <div class="three columns"> <img src="{% static 'app\images\Mei-Huei Tang.jpg' %}" width="220" height="220" alt=""/>
+            <h6>Mei-Huei Tang, PhD</h6>
+            <p>tang002@gannon.edu <br>Gannon University</p>
+            <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
+          </div>
+          <div class="three columns"> <img src="{% static 'app\images\pulin-agrawal.jpg' %}" width="220" height="220"
+              alt="" />
+            <h6>Pulin Agrawal, PhD </h6>
+            <p>pja5407@psu.edu<br>Penn State University, Pennsylvania, USA</p>
+            <!-- <span class="typcn typcn-social-facebook-circular icon"></span><span class="typcn typcn-social-instagram-circular icon"></span><span class="typcn typcn-social-google-plus-circular icon"></span><span class="typcn typcn-social-linkedin-circular icon"></span>  -->
+          </div>
+
+
+        </div>
+
+        <h3>Technical Program Committee</h3>
+        <div class="row">
+          <div class="techthree columns">
+            <h6> Waqar Ali, PhD </h6>
+            <p>Zurich University of Applied Sciences, Switzerland.</p>
+          </div>
+          <!-- <div class="techthree columns"> 
             <h6>Ghufran Ahmad, PhD</h6>
             <p>FAST-NUCES, Karachi, Pakistan</p>
         </div>
@@ -623,174 +738,222 @@
             <p>City University of Hong Kong</p>
         </div> -->
 
-<div class="techthree columns"> 
+          <div class="techthree columns">
             <h6>Ghufran Ahmad, PhD
-            </h6><p>
-FAST-NUCES, Karachi, Pakistan
-</p></div>
- 
+            </h6>
+            <p>
+              FAST-NUCES, Karachi, Pakistan
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Ghulam Mudassir, PhD
-            </h6><p>
-University of Buckingham, UK 
-</p></div>
- 
+            </h6>
+            <p>
+              University of Buckingham, UK
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Chong Chun Yong, PhD
-            </h6><p>
-Monash University, Malaysia
-</p></div>
- 
+            </h6>
+            <p>
+              Monash University, Malaysia
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Kwabena Ebo Bennin, PhD
-            </h6><p>
-Wageningen University, Netherland
-</p></div>
- 
+            </h6>
+            <p>
+              Wageningen University, Netherland
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Pullin Agarwal, PhD
-            </h6><p>
-Penn State University, Behrend, USA
-</p></div>
- 
+            </h6>
+            <p>
+              Penn State University, Behrend, USA
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Mohammad Imtiaz Ullah, PhD
-            </h6><p>
-Ontario Tech University Canada
-</p></div>
- 
+            </h6>
+            <p>
+              Ontario Tech University Canada
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Mohammad Junaid Khan, PhD
-            </h6><p>
-Western Washington University, USA
-</p></div>
- 
+            </h6>
+            <p>
+              Western Washington University, USA
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Mohammad Javid, PhD
-            </h6><p>
-Gomal University, Pakistan
-</p></div>
- 
+            </h6>
+            <p>
+              Gomal University, Pakistan
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Abdul Mateen, PhD
-            </h6><p>
-Federal Urdu University, Pakistan
-</p></div>
- 
+            </h6>
+            <p>
+              Federal Urdu University, Pakistan
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Jie Zhao, PhD
-            </h6><p>
-Penn State University, USA
-</p></div>
- 
+            </h6>
+            <p>
+              Penn State University, USA
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Matteo Esposito, , PhD
-            </h6><p>
-University of Rome "Tor Vergata", Italy
-</p></div>
- 
+            </h6>
+            <p>
+              University of Rome "Tor Vergata", Italy
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Mahdi Fahmideh, PhD
-            </h6><p>
-University of Southern Queensland, Australia
-</p></div>
- 
+            </h6>
+            <p>
+              University of Southern Queensland, Australia
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Vita Santa Barletta, PhD
-            </h6><p>
-University of Bari, Italy
-</p></div>
- 
+            </h6>
+            <p>
+              University of Bari, Italy
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Shalli Rani, PhD
-            </h6><p>
-Chitkara University, India
-</p></div>
- 
+            </h6>
+            <p>
+              Chitkara University, India
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Gastón Márquez, PhD
-            </h6><p>
-Universidad del Bío-Bío, Chile
-</p></div>
- 
+            </h6>
+            <p>
+              Universidad del Bío-Bío, Chile
+            </p>
+          </div>
 
-<div class="techthree columns"> 
-            <h6>Saima  Rafi, PhD
-            </h6><p>
-Edinburgh Napier University, UK
-</p></div>
- 
 
-<div class="techthree columns"> 
+          <div class="techthree columns">
+            <h6>Saima Rafi, PhD
+            </h6>
+            <p>
+              Edinburgh Napier University, UK
+            </p>
+          </div>
+
+
+          <div class="techthree columns">
             <h6>Anibrata Pal, PhD
-            </h6><p>
-University of Bari, Italy
-</p></div>
- 
+            </h6>
+            <p>
+              University of Bari, Italy
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Javed Ai Khan, PhD
-            </h6><p>
-University of Hertfordshire, UK
-</p></div>
- 
+            </h6>
+            <p>
+              University of Hertfordshire, UK
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Peng Liand, PhD
-            </h6><p>
-Wuhan University, China
-</p></div>
- 
+            </h6>
+            <p>
+              Wuhan University, China
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Muhammad Imran, PhD
-            </h6><p>
-University of Florida, Gainesville, FL.
-</p></div>
- 
+            </h6>
+            <p>
+              University of Florida, Gainesville, FL.
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Umer Javeed, PhD
-            </h6><p>
-Baymatob Pty Ltd, Australia
-</p></div>
- 
+            </h6>
+            <p>
+              Baymatob Pty Ltd, Australia
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Khubaib Amjad Alam, PhD
-            </h6><p>
-Al Ain University, Dubai
-</p></div>
- 
+            </h6>
+            <p>
+              Al Ain University, Dubai
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Muhammad Imran, PhD
-            </h6><p>
-National University of Sciences and Technology (NUST), Islamabad, Pakistan
-</p></div>
- 
+            </h6>
+            <p>
+              National University of Sciences and Technology (NUST), Islamabad, Pakistan
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Mohsin Riaz, PhD
-            </h6><p>
-COMSATS University Islamabad, Pakistan
-</p></div>
- 
-<!-- 
+            </h6>
+            <p>
+              COMSATS University Islamabad, Pakistan
+            </p>
+          </div>
+
+          <!-- 
 <div class="techthree columns"> 
             <h6>Javed Iqbal, PhD
             </h6><p>
@@ -798,109 +961,123 @@ COMSATS University Islamabad, Pakistan
 </p></div>
   -->
 
-<div class="techthree columns"> 
+          <div class="techthree columns">
             <h6>Javed Iqbal, PhD
-            </h6><p>
-COMSATS University Islamabad, Pakistan
-</p></div>
- 
+            </h6>
+            <p>
+              COMSATS University Islamabad, Pakistan
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Irum Inayat, PhD
-            </h6><p>
-FAST-NUCES Islamabad, Pakistan
-</p></div>
- 
+            </h6>
+            <p>
+              FAST-NUCES Islamabad, Pakistan
+            </p>
+          </div>
 
-<div class="techthree columns"> 
+
+          <div class="techthree columns">
             <h6>Raja Habib, PhD
-            </h6><p>
-Shifa Tameer-e-Millat University, Islamabad, Pakistan
-    </p>
-  </div>
+            </h6>
+            <p>
+              Shifa Tameer-e-Millat University, Islamabad, Pakistan
+            </p>
+          </div>
 
-  <div class="techthree columns"> 
-    <h6>Abdul Khalique Shaikh, PhD
-    </h6><p>
-Sultan Qaboos University, Muscat, Oman
-</p>
-</div>
+          <div class="techthree columns">
+            <h6>Abdul Khalique Shaikh, PhD
+            </h6>
+            <p>
+              Sultan Qaboos University, Muscat, Oman
+            </p>
+          </div>
 
-<div class="techthree columns"> 
-  <h6>Kifayat Ullah Khan, PhD
-  </h6><p>
-Birmingham City University, UK
-</p>
-</div>
+          <div class="techthree columns">
+            <h6>Kifayat Ullah Khan, PhD
+            </h6>
+            <p>
+              Birmingham City University, UK
+            </p>
+          </div>
 
-<div class="techthree columns"> 
-  <h6>Sajid Ibrahim Hashmi, PhD
-  </h6><p>
-    University of Oulu, Finland
-</p>
-</div>
+          <div class="techthree columns">
+            <h6>Sajid Ibrahim Hashmi, PhD
+            </h6>
+            <p>
+              University of Oulu, Finland
+            </p>
+          </div>
 
-<div class="techthree columns"> 
-  <h6>Md Rayhanur Rahman, PhD
-  </h6><p>
-The University of Alabama, USA
-</p>
-</div>
-<div class="techthree columns"> 
-  <h6>Hassan Ali Khattak, PhD
+          <div class="techthree columns">
+            <h6>Md Rayhanur Rahman, PhD
+            </h6>
+            <p>
+              The University of Alabama, USA
+            </p>
+          </div>
+          <div class="techthree columns">
+            <h6>Hassan Ali Khattak, PhD
 
-  </h6><p>
-    Australian Catholic University, Australia
-</p>
-</div>
-
-
-<div class="techthree columns"> 
-  <h6>Abdul Wahid Khan, PhD
-
-  </h6><p>
-    University of Science and Technology, Pakistan
-</p>
-</div>
+            </h6>
+            <p>
+              Australian Catholic University, Australia
+            </p>
+          </div>
 
 
-<div class="techthree columns"> 
-  <h6>Adnan Akhunzada, PhD
+          <div class="techthree columns">
+            <h6>Abdul Wahid Khan, PhD
 
-  </h6><p>
-    University of Doha for Science and Technology, Qatar
-</p>
-</div>
-<div class="techthree columns"> 
-  <h6>Dr. Kamran Latif
-
-  </h6><p>
-    National Institute of Electronics, Pakistan
-</p>
-</div>
+            </h6>
+            <p>
+              University of Science and Technology, Pakistan
+            </p>
+          </div>
 
 
-<div class="techthree columns"> 
-  <h6>
+          <div class="techthree columns">
+            <h6>Adnan Akhunzada, PhD
 
-  </h6><p>
+            </h6>
+            <p>
+              University of Doha for Science and Technology, Qatar
+            </p>
+          </div>
+          <div class="techthree columns">
+            <h6>Kamran Latif, PhD
 
-</p>
-</div>
+            </h6>
+            <p>
+              National Institute of Electronics, Pakistan
+            </p>
+          </div>
+
+
+          <div class="techthree columns">
+            <h6>
+
+            </h6>
+            <p>
+
+            </p>
+          </div>
 
 
 
 
-  </div>
+        </div>
 
 
-    
-    </div>
+
+      </div>
   </section>
-  
+
   <!-- Skills Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="skills">
     <div class="container">
       <h1>Services</h1>
@@ -954,8 +1131,8 @@ The University of Alabama, USA
   </section>
    -->
   <!-- Portfolio Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="portfolio">
     <div class="container">
       <h1>Work</h1>
@@ -974,10 +1151,10 @@ The University of Alabama, USA
       </div>
     </div>
   </section> -->
-  
+
   <!-- Testimonials Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="testimonial">
     <div class="container">
       <div class="quoteLoop">
@@ -994,10 +1171,10 @@ The University of Alabama, USA
       </div>
     </div>
   </section> -->
-  
+
   <!-- Contact Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="contact">
     <div class="container">
       <h1>Contact</h1>
@@ -1021,10 +1198,10 @@ The University of Alabama, USA
       </form>
     </div>
   </section> -->
-  
+
   <!-- Footer Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <footer>
     <div class="container">
       <div class="nine columns">
@@ -1033,7 +1210,7 @@ The University of Alabama, USA
         <br>
         We’d love to hear from you.
         <br>
-        SEET 2025 Conference Secretariat 
+        SEET 2026 Conference Secretariat
         <br>
         <a style="color: black;" href="mailto: seet@sw-conf.com">seet@sw-conf.com</a>
       </div>
@@ -1041,273 +1218,273 @@ The University of Alabama, USA
     </div>
   </footer>
 </body>
+
 </html>
 
 <style>
-/* Gallery Section Styles */
-.gallery-info {
-  margin-bottom: 3rem;
-}
+  /* Gallery Section Styles */
+  .gallery-info {
+    margin-bottom: 3rem;
+  }
 
-.gallery-download-section {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  border: 1px solid #dee2e6;
-  border-radius: 16px;
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-download-section:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-}
-
-.download-content h5 {
-  color: #2c3e50;
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
-}
-
-.download-content h5 i {
-  color: #007bff;
-  margin-right: 0.5rem;
-}
-
-.download-content p {
-  color: #6c757d;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.download-btn {
-  display: inline-flex;
-  align-items: center;
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
-}
-
-.download-btn:hover {
-  background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
-  color: white;
-  text-decoration: none;
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
-}
-
-.download-btn i {
-  margin-right: 0.5rem;
-}
-
-.validity-note {
-  margin-top: 1rem;
-  color: #6c757d;
-  font-size: 0.9rem;
-}
-
-.validity-note i {
-  color: #ffc107;
-  margin-right: 0.3rem;
-}
-
-/* Gallery Carousel Styles */
-.gallery-container {
-  margin: 2rem 0;
-}
-
-#galleryCarousel {
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e9ecef;
-}
-
-.gallery-carousel-image {
-  height: 500px;
-  object-fit: cover;
-  width: 100%;
-}
-
-.carousel-indicators {
-  bottom: 20px;
-}
-
-.carousel-indicators li {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin: 0 6px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 2px solid rgba(255, 255, 255, 0.9);
-  transition: all 0.3s ease;
-}
-
-.carousel-indicators li.active {
-  background-color: #fff;
-  border-color: #fff;
-  transform: scale(1.2);
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  width: 5%;
-  opacity: 0.9;
-  transition: opacity 0.3s ease;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  opacity: 1;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  width: 50px;
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
-  background-size: 60%;
-  transition: all 0.3s ease;
-}
-
-.carousel-control-prev:hover .carousel-control-prev-icon,
-.carousel-control-next:hover .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(1.1);
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
   .gallery-download-section {
-    padding: 1.5rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 1px solid #dee2e6;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
-  .download-content h5 {
-    font-size: 1.2rem;
-  }
-  
-  .gallery-carousel-image {
-    height: 350px;
-  }
-  
-  .carousel-indicators {
-    bottom: 15px;
-  }
-  
-  .carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    margin: 0 4px;
-  }
-  
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    width: 40px;
-    height: 40px;
-  }
-}
 
-@media (max-width: 576px) {
-  .gallery-download-section {
-    padding: 1rem;
+  .gallery-download-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   }
-  
+
   .download-content h5 {
-    font-size: 1.1rem;
+    color: #2c3e50;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
   }
-  
+
+  .download-content h5 i {
+    color: #007bff;
+    margin-right: 0.5rem;
+  }
+
   .download-content p {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .download-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  }
+
+  .download-btn:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+    color: white;
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+  }
+
+  .download-btn i {
+    margin-right: 0.5rem;
+  }
+
+  .validity-note {
+    margin-top: 1rem;
+    color: #6c757d;
     font-size: 0.9rem;
   }
-  
-  .gallery-carousel-image {
-    height: 250px;
+
+  .validity-note i {
+    color: #ffc107;
+    margin-right: 0.3rem;
   }
-  
+
+  /* Gallery Carousel Styles */
+  .gallery-container {
+    margin: 2rem 0;
+  }
+
+  #galleryCarousel {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e9ecef;
+  }
+
+  .gallery-carousel-image {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .carousel-indicators {
+    bottom: 20px;
+  }
+
+  .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 6px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+  }
+
+  .carousel-indicators li.active {
+    background-color: #fff;
+    border-color: #fff;
+    transform: scale(1.2);
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 1;
+  }
+
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    background-size: 60%;
+    transition: all 0.3s ease;
   }
-}
+
+  .carousel-control-prev:hover .carousel-control-prev-icon,
+  .carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .gallery-download-section {
+      padding: 1.5rem;
+    }
+
+    .download-content h5 {
+      font-size: 1.2rem;
+    }
+
+    .gallery-carousel-image {
+      height: 350px;
+    }
+
+    .carousel-indicators {
+      bottom: 15px;
+    }
+
+    .carousel-indicators li {
+      width: 10px;
+      height: 10px;
+      margin: 0 4px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .gallery-download-section {
+      padding: 1rem;
+    }
+
+    .download-content h5 {
+      font-size: 1.1rem;
+    }
+
+    .download-content p {
+      font-size: 0.9rem;
+    }
+
+    .gallery-carousel-image {
+      height: 250px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 35px;
+      height: 35px;
+    }
+  }
 </style>
 
 
 <script>
-    /*----------------------------------------------------*/
-/* Quote Loop
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Quote Loop
+  ------------------------------------------------------ */
 
-function fade($ele) {
-    $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
-        var $next = $(this).next('.quote');
-        fade($next.length > 0 ? $next : $(this).parent().children().first());
-   });
-}
-fade($('.quoteLoop > .quote').first());
+  function fade($ele) {
+    $ele.fadeIn(1000).delay(3000).fadeOut(1000, function () {
+      var $next = $(this).next('.quote');
+      fade($next.length > 0 ? $next : $(this).parent().children().first());
+    });
+  }
+  fade($('.quoteLoop > .quote').first());
 
 
-/*----------------------------------------------------*/
-/* Navigation
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Navigation
+  ------------------------------------------------------ */
 
-$(window).scroll(function() {
+  $(window).scroll(function () {
 
     if ($(window).scrollTop() > 300) {
-        $('.main_nav').addClass('sticky');
+      $('.main_nav').addClass('sticky');
     } else {
-        //$('.main_nav').removeClass('sticky');
+      //$('.main_nav').removeClass('sticky');
     }
-});
+  });
 
-// Mobile Navigation
-$('.mobile-toggle').click(function() {
+  // Mobile Navigation
+  $('.mobile-toggle').click(function () {
     if ($('.main_nav').hasClass('open-nav')) {
-        $('.main_nav').removeClass('open-nav');
+      $('.main_nav').removeClass('open-nav');
     } else {
-        $('.main_nav').addClass('open-nav');
+      $('.main_nav').addClass('open-nav');
     }
-});
+  });
 
-$('.main_nav li a').click(function() {
+  $('.main_nav li a').click(function () {
     if ($('.main_nav').hasClass('open-nav')) {
-        $('.navigation').removeClass('open-nav');
-        $('.main_nav').removeClass('open-nav');
+      $('.navigation').removeClass('open-nav');
+      $('.main_nav').removeClass('open-nav');
     }
-});
+  });
 
 
-/*----------------------------------------------------*/
-/* Smooth Scrolling
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Smooth Scrolling
+  ------------------------------------------------------ */
 
-jQuery(document).ready(function($) {
+  jQuery(document).ready(function ($) {
 
-   $('.smoothscroll').on('click',function (e) {
-	    e.preventDefault();
+    $('.smoothscroll').on('click', function (e) {
+      e.preventDefault();
 
-	    var target = this.hash,
-	    $target = $(target);
+      var target = this.hash,
+        $target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 800, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-  
-});
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 800, 'swing', function () {
+        window.location.hash = target;
+      });
+    });
+
+  });
 
 
-TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
+  TweenMax.staggerFrom(".heading", 0.8, { opacity: 0, y: 20, delay: 0.2 }, 0.4);
 </script>
-

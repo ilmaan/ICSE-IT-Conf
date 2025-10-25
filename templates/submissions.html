@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  SEET 2025</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'app/images/SEET_revmininb.png' %}">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" ></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SEET 2025</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'app/images/SEET_revmininb.png' %}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
 </head>
+
 <body>
-    <!-- Header Section
+  <!-- Header Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<nav class="navbar navbar-expand-lg navbar-light ">
-  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav" style="width: 100%;">
-       <nav>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav" style="width: 100%;">
+        <nav>
           <ul>
             <li><a class="smoothscroll" href="/">Home</a></li>
-                <li><a class="smoothscroll" href="/">Tracks</a></li>
-                <li><a class="smoothscroll" href="/">key Dates</a></li>
-                <li><a class="smoothscroll" href="/">Committees</a></li>
-                <li><a class="smoothscroll" href="/submissions">Submissions</a></li>
-                <li><a class="smoothscroll" href="/registration">Registration</a></li>
-                <li><a class="smoothscroll" href="/travel">Travel & Venue</a></li>
-            
-          </ul>
-    </ul>
-  </div>
-</nav>
+            <li><a class="smoothscroll" href="/">Tracks</a></li>
+            <li><a class="smoothscroll" href="/">key Dates</a></li>
+            <li><a class="smoothscroll" href="/">Committees</a></li>
+            <li><a class="smoothscroll" href="/submissions">Submissions</a></li>
+            <li><a class="smoothscroll" href="/registration">Registration</a></li>
+            <li><a class="smoothscroll" href="/travel">Travel & Venue</a></li>
 
-<div class="headerlogo">
+          </ul>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="headerlogo">
     <img src="{% static 'app/images/SEET_rev2.png' %}" width="1000px" alt="">
-</div>
-<header id="header">
+  </div>
+  <header id="header">
     <!-- <div class="main_nav sticky">
       <div class="container-flex">
         <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
@@ -66,8 +76,8 @@
       </div>
     </div> -->
     <div class="title">
-    
-        <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+      <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="{% static 'app/images/csulbslider1.jpg' %}" width="1000px" height="600px" class="d-block " src="..." alt="First slide">
@@ -90,111 +100,128 @@
           </div> -->
 
 
-    
+
     </div>
     <a class="smoothscroll" href="#about">
-    <div class="scroll-down"></div>
-    </a> </header>
-    
+      <div class="scroll-down"></div>
+    </a>
+  </header>
+
   <!-- About Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-    
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <section id="about">
     <div class="container">
       <div class=" row">
         <h1>Submission Details</h1>
         <div class="block"></div>
         <p>
-            Submissions are to be uploaded to the submission/evaluation website portal at 
-            <a href="https://equinocs.springernature.com/service/seet2025" target="_blank">https://equinocs.springernature.com/service/seet2025.</a> However, please read the instructions below before doing so.  
-            <!-- <br> -->
-            <!-- All accepted papers of all Research Tracks will be published by Springer Nature 
+          Submissions are to be uploaded to the
+          <a href=""
+            target="_blank"><span style="color: #0962bb;"> conference submission portal.</span></a> However, please read the
+          instructions below before doing so.
+          <!-- <br> -->
+          <!-- All accepted papers of all Research Tracks will be published by Springer Nature 
             <a href="https://www.springernature.com/" target="_blank">(https://www.springernature.com/)</a> in the proceedings of The 2025 International Conference on Software Engineering of Emerging Technologies (SEET’25).   -->
         </p>
 
-        
+
 
       </div>
 
       <div class="row">
         <!-- <h3>INSTRUCTIONS FOR SUBMISSION OF PAPERS FOR EVALUATION:</h3> -->
-        <b>Instructions for Authors:</b>
+        <b style="color: #a0317b;">Instructions for Authors:</b>
         <br><br>
         <!-- <div class="block"></div> -->
         <p>
 
-          For the submission of draft papers (i.e., papers submitted for evaluation), any reasonable formatting/typesetting is acceptable. Authors of accepted papers will later receive specific typesetting instructions to prepare their final versions. The final papers are expected to use the standard Springer Nature typesetting format ("US letter" standard size):
-            <br>
-            <br>
+          For the submission of draft papers (i.e., papers submitted for evaluation), any reasonable
+          formatting/typesetting is acceptable. Authors of accepted papers will later receive specific typesetting
+          instructions to prepare their final versions. The final papers are expected to use the standard Springer
+          Nature typesetting format ("US letter" standard size):
+          <br>
+          <br>
 
-            <!-- All submissions must be original and must not have been previously published or currently under consideration for publication elsewhere. For categories of papers and page limitations, refer to <a href=" https://www.seet25.sw-conf.com"> https://www.seet25.sw-conf.com</a>. Submissions must be in either MS doc or PDF formats (only one file should be uploaded/submitted for each paper). -->
-            All submissions must be original and must not have been previously published or currently under consideration for publication elsewhere. For categories of papers and page limitations, refer to <a href="https://seet25.sw-conf.com/#tracks">https://seet25.sw-conf.com/#tracks.</a> Submissions must be in either MS doc or PDF formats (only one file should be uploaded/submitted for each paper).
-            <br>
-            <br>
-            All submissions will be tested for similarity and overlap with prior published material using the iThenticate tool. The results of such overlap will be available to the Program Committee for evaluation. A committee that reports to the VP for Publications will investigate possible violations of the Springer ethics rules in publishing.
-            <br>
-            <br>
-
-
-            <b>Margins, Formats & Templates</b>
-            <br>
-            <br>
-
-
-
-            WORD template: <a href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734" target="_blank">https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734</a>
-            
-            <br>
-            LaTeX template: <a href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678" target="_blank">https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678</a>   
-            <br> 
-            <br>        
-            The information for margin and format is available here  
-            <a href="{{context.pdf.url}}">(instruction for authors).</a>
-            <br>
-            <br>
-
-            <b>Large Language Model (LLM) Policy</b>
-            <br>
-            <br>
-
-Please note that manuscripts generated by large-scale language models (LLMs) such as ChatGPT are prohibited as submissions to SEET 2025. We will allow papers for which LLMs are used for light editing the author's original text, such as spelling and grammar corrections.
-
-<br><br>
-          <b>Best Paper Awards</b>
-<br><br>
-
-The conference will have the following awards announced and bestowed at the closing session.
-<br><br>
+          <!-- All submissions must be original and must not have been previously published or currently under consideration for publication elsewhere. For categories of papers and page limitations, refer to <a href=" https://www.seet25.sw-conf.com"> https://www.seet25.sw-conf.com</a>. Submissions must be in either MS doc or PDF formats (only one file should be uploaded/submitted for each paper). -->
+          All submissions must be original and must not have been previously published or currently under consideration
+          for publication elsewhere. For categories of papers and page limitations, refer to <a
+            href="https://seet26.sw-conf.com/#tracks">https://seet26.sw-conf.com/#tracks.</a> Submissions must be in
+          either MS doc or PDF formats (only one file should be uploaded/submitted for each paper).
+          <br>
+          <br>
+          All submissions will undergo testing for similarity and overlap with previously published materials utilizing
+          the iThenticate tool. The findings regarding any overlap will be accessible to the Steering Committee for
+          assessment. A committee will examine potential breaches of the Springer ethics guidelines in publishing.
+          <br>
+          <br>
 
 
-- Best Regular Paper
-<br>
-- Best Short Paper
-<br>
-- Best Idea & Vision Paper
-<br>
-- Best Student Paper (SRC)
-<br>
-<br>
-The author of an awarded paper and co-authors, if any, will be entitled to:
-<br>
-- A signed and stamped official award certificate;
-<br>
-- The announcement of their achievement on a special conference webpage;
-<br><br>
-
-<b>Selection Criteria</b>
-<br><br>
-The awards will be conferred to the author(s) of a paper presented at the conference selected by the Program/ Track Chairs. The decision criterion will consider the paper quality (assessed by the Program Committee) and the oral presentation quality (feedback from session chairs at the conference venue). As such, to enable a final ranking in a timely manner:
-<br><br>
-- Papers selected as candidates for best paper awards will be presented in sessions on the first or second days of the conference.
-<br>
-- Candidates for the "Best Student Paper Award (SRC)" should be presented by students, though authors may include senior members.
+          <b style="color: #a0317b;">Margins, Formats & Templates</b>
+          <br>
+          <br>
 
 
 
+          WORD template: <a
+            href="https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734"
+            target="_blank">https://www.springer.com/gp/authors-editors/conference-proceedings/editors/word-template/19338734</a>
 
-</p>
+          <br>
+          LaTeX template: <a
+            href="https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678"
+            target="_blank">https://www.springer.com/gp/computer-science/lncs/new-latex-templates-available/15634678</a>
+          <br>
+          <br>
+          The information for margin and format is available here
+          <a href="{{context.pdf.url}}">(instruction for authors).</a>
+          <br>
+          <br>
+
+          <b style="color: #a0317b;">Large Language Model (LLM) Policy</b>
+          <br>
+          <br>
+
+          Please note that manuscripts generated by large-scale language models (LLMs) such as ChatGPT are prohibited as
+          submissions to SEET 2025. We will allow papers for which LLMs are used for light editing the author's original
+          text, such as spelling and grammar corrections.
+          <br>
+          <br>
+          <b style="color: #a0317b;">Best Paper Awards</b>
+          <br>
+          <br>
+
+          The conference will have the following awards announced and bestowed at the closing session.
+          <br>
+          - Best Paper Award
+          <br>
+          - Best SRC Award
+          <br>
+          <br>
+          The author of an awarded paper and co-authors, if any, will be entitled to:
+          <br>
+          - An official award certificate that is signed and stamped;
+          <br>
+          - A public announcement of their accomplishment on a dedicated conference webpage
+          <br><br>
+
+          <b style="color: #a0317b;">Selection Criteria</b>
+          <br><br>
+          The awards will be granted to the author(s) of a paper presented at the conference, as chosen by the
+          Program/Track Chairs. The criteria for decision-making will take into account the quality of the paper
+          (evaluated by the Program Committee) and the quality of the oral presentation (based on feedback from session
+          chairs at the conference venue). Therefore, to facilitate a final ranking in a prompt manner:
+          <br><br>
+          - Papers chosen as nominees for best paper awards will be showcased during sessions on either the first or
+          second day of the conference.
+          <br>
+          - Candidates for the "Best Student Paper Award (SRC)" must be presented by students, although authors may also
+          include senior members.
+
+
+
+
+        </p>
         <!-- <div class="list-group w-100 p-3 mb-5">
             
             <p  class="list-group-item list-group-item mb-1">  - Title of the paper </p>
@@ -206,22 +233,22 @@ The awards will be conferred to the author(s) of a paper presented at the confer
                         
           </div> -->
       </div>
-      
-     
+
+
     </div>
 
-   
+
 
 
 
 
   </section>
-  
- 
-  
+
+
+
   <!-- Skills Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="skills">
     <div class="container">
       <h1>Services</h1>
@@ -275,8 +302,8 @@ The awards will be conferred to the author(s) of a paper presented at the confer
   </section>
    -->
   <!-- Portfolio Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="portfolio">
     <div class="container">
       <h1>Work</h1>
@@ -295,10 +322,10 @@ The awards will be conferred to the author(s) of a paper presented at the confer
       </div>
     </div>
   </section> -->
-  
+
   <!-- Testimonials Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="testimonial">
     <div class="container">
       <div class="quoteLoop">
@@ -315,10 +342,10 @@ The awards will be conferred to the author(s) of a paper presented at the confer
       </div>
     </div>
   </section> -->
-  
+
   <!-- Contact Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="contact">
     <div class="container">
       <h1>Contact</h1>
@@ -342,10 +369,10 @@ The awards will be conferred to the author(s) of a paper presented at the confer
       </form>
     </div>
   </section> -->
-  
+
   <!-- Footer Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <footer>
     <div class="container">
       <div class="nine columns">
@@ -354,7 +381,7 @@ The awards will be conferred to the author(s) of a paper presented at the confer
         <br>
         We’d love to hear from you.
         <br>
-        SEET 2025 Conference Secretariat 
+        SEET 2025 Conference Secretariat
         <br>
         <a style="color: black;" href="mailto: seet@sw-conf.com">seet@sw-conf.com</a>
       </div>
@@ -362,77 +389,77 @@ The awards will be conferred to the author(s) of a paper presented at the confer
     </div>
   </footer>
 </body>
+
 </html>
 
 <style></style>
 
 
 <script>
-    /*----------------------------------------------------*/
-/* Quote Loop
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Quote Loop
+  ------------------------------------------------------ */
 
-function fade($ele) {
-    $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
-        var $next = $(this).next('.quote');
-        fade($next.length > 0 ? $next : $(this).parent().children().first());
-   });
-}
-fade($('.quoteLoop > .quote').first());
+  function fade($ele) {
+    $ele.fadeIn(1000).delay(3000).fadeOut(1000, function () {
+      var $next = $(this).next('.quote');
+      fade($next.length > 0 ? $next : $(this).parent().children().first());
+    });
+  }
+  fade($('.quoteLoop > .quote').first());
 
 
-/*----------------------------------------------------*/
-/* Navigation
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Navigation
+  ------------------------------------------------------ */
 
-$(window).scroll(function() {
+  $(window).scroll(function () {
 
     if ($(window).scrollTop() > 300) {
-        $('.main_nav').addClass('sticky');
+      $('.main_nav').addClass('sticky');
     } else {
-        //$('.main_nav').removeClass('sticky');
+      //$('.main_nav').removeClass('sticky');
     }
-});
+  });
 
-// Mobile Navigation
-$('.mobile-toggle').click(function() {
+  // Mobile Navigation
+  $('.mobile-toggle').click(function () {
     if ($('.main_nav').hasClass('open-nav')) {
-        $('.main_nav').removeClass('open-nav');
+      $('.main_nav').removeClass('open-nav');
     } else {
-        $('.main_nav').addClass('open-nav');
+      $('.main_nav').addClass('open-nav');
     }
-});
+  });
 
-$('.main_nav li a').click(function() {
+  $('.main_nav li a').click(function () {
     if ($('.main_nav').hasClass('open-nav')) {
-        $('.navigation').removeClass('open-nav');
-        $('.main_nav').removeClass('open-nav');
+      $('.navigation').removeClass('open-nav');
+      $('.main_nav').removeClass('open-nav');
     }
-});
+  });
 
 
-/*----------------------------------------------------*/
-/* Smooth Scrolling
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Smooth Scrolling
+  ------------------------------------------------------ */
 
-jQuery(document).ready(function($) {
+  jQuery(document).ready(function ($) {
 
-   $('.smoothscroll').on('click',function (e) {
-	    e.preventDefault();
+    $('.smoothscroll').on('click', function (e) {
+      e.preventDefault();
 
-	    var target = this.hash,
-	    $target = $(target);
+      var target = this.hash,
+        $target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 800, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-  
-});
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 800, 'swing', function () {
+        window.location.hash = target;
+      });
+    });
+
+  });
 
 
-TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
+  TweenMax.staggerFrom(".heading", 0.8, { opacity: 0, y: 20, delay: 0.2 }, 0.4);
 </script>
-
