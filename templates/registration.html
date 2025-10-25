@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  SEET 2025</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'app/images/SEET_revmininb.png' %}">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" ></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://js.stripe.com/v3/"></script> 
-    <script src="{% static 'main.js' %}"></script>
-    <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SEET 2025</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'app/images/SEET_revmininb.png' %}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="{% static 'main.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
 </head>
+
 <body>
-    <!-- Header Section
+  <!-- Header Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<nav class="navbar navbar-expand-lg navbar-light ">
-  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav" style="width: 100%;">
-       <nav>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav" style="width: 100%;">
+        <nav>
           <ul>
             <li><a class="smoothscroll" href="/">Home</a></li>
-                <li><a class="smoothscroll" href="/">Tracks</a></li>
-                <li><a class="smoothscroll" href="/">key Dates</a></li>
-                <li><a class="smoothscroll" href="/">Committees</a></li>
-                <li><a class="smoothscroll" href="/submissions">Submissions</a></li>
-                <li><a class="smoothscroll" href="/registration">Registration</a></li>
-                <li><a class="smoothscroll" href="/travel">Travel & Venue</a></li>
-            
-          </ul>
-    </ul>
-  </div>
-</nav>
+            <li><a class="smoothscroll" href="/">Tracks</a></li>
+            <li><a class="smoothscroll" href="/">key Dates</a></li>
+            <li><a class="smoothscroll" href="/">Committees</a></li>
+            <li><a class="smoothscroll" href="/submissions">Submissions</a></li>
+            <li><a class="smoothscroll" href="/registration">Registration</a></li>
+            <li><a class="smoothscroll" href="/travel">Travel & Venue</a></li>
 
-<div class="headerlogo">
+          </ul>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="headerlogo">
     <img src="{% static 'app/images/SEET_rev2.png' %}" width="1000px" alt="">
-</div>
-<header id="header">
+  </div>
+  <header id="header">
     <!-- <div class="main_nav sticky">
       <div class="container-flex">
         <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
@@ -66,8 +76,8 @@
       </div>
     </div> -->
     <div class="title">
-    
-        <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+      <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="{% static 'app/images/csulbslider1.jpg' %}" width="1000px" height="600px" class="d-block " src="..." alt="First slide">
@@ -90,28 +100,30 @@
           </div> -->
 
 
-    
+
     </div>
     <a class="smoothscroll" href="#about">
-    <div class="scroll-down"></div>
-    </a> </header>
-    
+      <div class="scroll-down"></div>
+    </a>
+  </header>
+
   <!-- About Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-    
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <section id="about">
     <div class="container">
       <div class="aboutseet row">
         <h1>Registration Policies</h1>
         <div class="block"></div>
         <p>
-            <!-- If the paper is accepted, at least one of the authors listed on the paper must register for the SEET 2025. -->
+          <!-- If the paper is accepted, at least one of the authors listed on the paper must register for the SEET 2025. -->
 
-If the paper is accepted, at least one of the authors listed on the paper must attend the conference and present the paper according to the schedule decided by the conference's Technical Program Committee.
-
-If the presenter is unable to attend the conference due to visa issues, a recorded presentation must be provided.
+          If the paper is accepted, at least one of the authors listed in the paper must be present at the conference
+          and deliver the presentation as per the timetable established by the Technical Program Committee. If the
+          presenter cannot attend the conference due to circumstances such as delayed visa processing, the author will
+          deliver an online presentation via a virtual session.
         </p>
- 
+
 
       </div>
 
@@ -119,108 +131,104 @@ If the presenter is unable to attend the conference due to visa issues, a record
         <b>Registration Fee</b>
         <!-- <div class="block"></div> -->
         <p>
-            The registration fees are set at the Academia Rate as shown below:
-            <br>
-            <br>
+          The registration fees are set at the Academia Rate as shown below:
+          <br>
+          <br>
 
-            <b>Author Registration:</b>
-            <br>
-            
-            <b>Full-Time Student:</b> $550.00 *
-            <br>
-            
-            <b>Non-Student:</b> $650.00 *
-            <br><br>
-            
-            
-            * Authors with more than one accepted paper must pay an "Extra Paper/Publication Charge" of $500.00 for each extra paper. For example, the fee for one author attending with two accepted papers would be $650 + $500 (or $550 + $500 for a full-time student).
-            <br><br>
+          <b>Author Registration:</b>
+          <br>
+
+          <b>Regular Registration:</b> $750.00 *
+          <br>
+          <b>SRC Registration:</b> $650.00 *
+          <br><br>
 
 
-            <b>General Attendee/Non-author Participants:</b>
-            <br>
-            <b>Full-Time Student:</b> $550.00
-            <br>
-            <b>Non-Student:</b> $650.00
-            <br>
+          * Authors with more than one accepted paper must pay an "Extra Paper/Publication Charge" of $500.00 for each
+          extra paper. For example, the fee for one author attending with two accepted papers would be $650 + $500 (or
+          $550 + $500 for a full-time student).
+          <br><br>
+
+
+          <b>Attendee/ Non-Author Registration:</b> $550.00 *
         </p>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
           Register Now
-      </button>
-      <!-- <style>
-        .btn-primary-custom {
-            background-color: #236db8;
-            font-size: 1.25rem; /* Adjust the size as needed */
-            padding: 0.75rem 1.5rem; /* Adjust padding for a larger button */
-        }
-    </style>
-    <button type="button" class="btn btn-primary btn-primary-custom" data-toggle="modal" data-target="#registerModal">
-        Register Now
-    </button> -->
+        </button>
 
       </div>
-
       <div class="aboutseet row">
         <b>Terms and Conditions</b>
         <br>
         <br>
         <!-- <div class="block"></div> -->
         <p>
-            
-            <b>- Refund Policy:</b> Paid NON-AUTHOR registrants who cannot participate and do not arrange a substitute are entitled to a partial refund of $200.00 if a request is received in writing on or before August 1, 2025. Registrants are liable for their total fees after that date (i.e., NO Refund will be made). There will be NO REFUNDS to authors of papers (since authors' fees are used to cover the publication, preparation of indexation meta-data, organization, infrastructure, ... costs of authors' own papers.)" 
-            <br>
-            <br>
-            
-            <b>- The conference cannot guarantee the issuance of a USA visa; authors whose visas are not issued on time can present their papers online. The registration fee will not be refunded.</b>
 
-            <br>
-            <br>
-            <b>-For those who are physically attending the conference</b>, the Registration Fee will include publication of their papers, a printed Conference Program (a conference package), breakfasts, a conference reception dinner, refreshment breaks (coffee/tea, etc.), access to all sessions, panel discussions, keynotes/Invited lectures, and miscellaneous conference materials. 
-            <br>
-            <br>
-            <b>-For those who are NOT physically attending the conference (i.e., virtual participation):</b> The Registration Fee will include publication of the accepted paper(s), access to the Conference Program, access to sessions, dissemination of their presentation and published paper (in case of speakers, authors). 
-            <br>
-            <br>
-            <b>- Authors of papers</b> must register and upload their correctly typeset papers to the publication website by the announced deadlines if they wish for their papers to be published. 
-                        <br>
-            <br>
-            - An author can publish maximum two papers. 
-            <br>
-            <br>
-            <b>-All Payments</b> must be in U.S. Dollars. Checks from banks outside the United States should be cashable at a branch of that bank in the United States or at any US bank. Please contact seet@sw-conf.com for wire or payment by check instructions (your email should include the accepted paper ID number and title of the accepted paper). 
-            <br>
-            <br>
-            <b>- Authors with more than one paper</b> must pay an "Extra Publication Charge" of $500.00 for each additional paper.
+          <b>- Refund Policy:</b> Paid registrants who are not authors and are unable to attend, without arranging for a
+          substitute, may receive a partial refund of $200.00 if their request is submitted in writing by August 1,
+          2026. After this date, registrants will be responsible for their full fees (i.e., NO Refund will be issued).
+          Authors of papers will NOT receive any refunds, as the fees collected from authors are allocated to cover the
+          costs associated with publication, preparation of indexation meta-data, organization, infrastructure, and
+          other expenses related to their own papers.
+          <br>
+          <br>
+          - The conference is unable to assure the issuance of a USA visa; authors whose visas are not granted in a
+          timely manner may present their papers online. The registration fee is non-refundable.
+          <br>
 
-            <br>
-            <br>
-            <!--- <b>Authors of papers</b> must register and upload their correctly typeset papers to the publication website by the announced deadlines if they wish for their papers to be published. -->
+          <br>
+          <b>- For those who are physically attending the conference</b>,the Registration Fee will encompass the
+          publication of their papers, a printed Conference Program (which is part of the conference package),
+          breakfasts, a reception dinner, refreshment breaks (including coffee and tea, among others), access to all
+          sessions, panel discussions, keynote speeches/Invited lectures, and various other conference materials.
+          <br>
+          <br>
+          <b>- For those who are NOT physically attending the conference (i.e., virtual participation):</b>The
+          Registration Fee will cover the publication of the accepted paper(s), access to the Conference Program, entry
+          to sessions, and the dissemination of their presentation and published paper (for speakers and authors).
+          <br>
+          <br>
+          <b>- Authors of papers</b> are required to register and submit their properly formatted manuscripts to the
+          publication website by the specified deadlines if they desire their works to be published.
+          <br>
+          <br>
+          - An author is permitted to publish a maximum of two papers, either as a primary author or as a co-author.
+          <br>
+          <br>
+          <b>- All Payments</b> are required to be made in U.S. Dollars. Checks issued by banks located outside the
+          United States must be cashable at a branch of that bank within the United States or at any U.S. bank. For
+          instructions regarding wire transfers or payments by check, please reach out to seet@sw-conf.com (ensure your
+          email includes the accepted paper ID number and the title of the accepted paper).
+
+          <br>
+          <br>
+          <!--- <b>Authors of papers</b> must register and upload their correctly typeset papers to the publication website by the announced deadlines if they wish for their papers to be published. -->
 
 
 
 
         </p>
- 
+
 
       </div>
 
-      
-      
-     
+
+
+
     </div>
 
-   
+
 
 
 
 
   </section>
-  
- 
-  
+
+
+
   <!-- Skills Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="skills">
     <div class="container">
       <h1>Services</h1>
@@ -274,8 +282,8 @@ If the presenter is unable to attend the conference due to visa issues, a record
   </section>
    -->
   <!-- Portfolio Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="portfolio">
     <div class="container">
       <h1>Work</h1>
@@ -294,10 +302,10 @@ If the presenter is unable to attend the conference due to visa issues, a record
       </div>
     </div>
   </section> -->
-  
+
   <!-- Testimonials Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="testimonial">
     <div class="container">
       <div class="quoteLoop">
@@ -314,10 +322,10 @@ If the presenter is unable to attend the conference due to visa issues, a record
       </div>
     </div>
   </section> -->
-  
+
   <!-- Contact Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- <section id="contact">
     <div class="container">
       <h1>Contact</h1>
@@ -341,10 +349,10 @@ If the presenter is unable to attend the conference due to visa issues, a record
       </form>
     </div>
   </section> -->
-  
+
   <!-- Footer Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <footer>
     <div class="container">
       <div class="nine columns">
@@ -353,7 +361,7 @@ If the presenter is unable to attend the conference due to visa issues, a record
         <br>
         We'd love to hear from you.
         <br>
-        SEET 2025 Conference Secretariat 
+        SEET 2026 Conference Secretariat
         <br>
         <a style="color: black;" href="mailto: seet@sw-conf.com">seet@sw-conf.com</a>
       </div>
@@ -362,7 +370,8 @@ If the presenter is unable to attend the conference due to visa issues, a record
   </footer>
 
   <!-- Modal Structure -->
-  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -375,37 +384,42 @@ If the presenter is unable to attend the conference due to visa issues, a record
           <form method="post" action="{% url 'registration_info' %}">
             {% csrf_token %}
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="registrationType" id="student" value="student" checked>
-                <label class="form-check-label" for="student">Student</label>
+              <input class="form-check-input" type="radio" name="registrationType" id="student" value="student" checked>
+              <label class="form-check-label" for="student">Student</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="registrationType" id="nonStudent" value="nonStudent">
-                <label class="form-check-label" for="nonStudent">Non-Student</label>
+              <input class="form-check-input" type="radio" name="registrationType" id="nonStudent" value="nonStudent">
+              <label class="form-check-label" for="nonStudent">Non-Student</label>
             </div>
             <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
             </div>
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
-                <small class="form-text text-muted">Note: Only register once with a single email address and use same email to pay.</small>
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+              <small class="form-text text-muted">Note: Only register once with a single email address and use same
+                email to pay.</small>
             </div>
             <div class="form-group">
-                <label for="numberOfPapers">Number of Papers Accepted</label>
-                <input type="number" class="form-control" id="numberOfPapers" name="numberOfPapers" placeholder="Enter number of papers accepted" min="1" required>
+              <label for="numberOfPapers">Number of Papers Accepted</label>
+              <input type="number" class="form-control" id="numberOfPapers" name="numberOfPapers"
+                placeholder="Enter number of papers accepted" min="1" required>
             </div>
             <div id="paperDetailsContainer">
-                <div class="form-group paper-details">
-                    <label for="paperDetails1">Paper Details (Paper ID - Paper Title)</label>
-                    <input type="text" class="form-control" id="paperDetails1" name="paperDetails1" placeholder="Enter as: PaperID, Paper Title">
-                    <small class="form-text text-muted">Multiple papers: Paper-1 ID, Paper-1 Title, Paper-2 ID, Paper-2 Title</small>
-                </div>
+              <div class="form-group paper-details">
+                <label for="paperDetails1">Paper Details (Paper ID - Paper Title)</label>
+                <input type="text" class="form-control" id="paperDetails1" name="paperDetails1"
+                  placeholder="Enter as: PaperID, Paper Title">
+                <small class="form-text text-muted">Multiple papers: Paper-1 ID, Paper-1 Title, Paper-2 ID, Paper-2
+                  Title</small>
+              </div>
             </div>
-        </form>
+          </form>
         </div>
         <div class="modal-footer">
-          <a href="#" data-toggle="modal" data-target="#paymentModal" data-dismiss="modal" style="margin-right: auto;">Already registered?</a>
+          <a href="#" data-toggle="modal" data-target="#paymentModal" data-dismiss="modal"
+            style="margin-right: auto;">Already registered?</a>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary" id="submitPay">Submit</button>
         </div>
@@ -414,109 +428,111 @@ If the presenter is unable to attend the conference due to visa issues, a record
   </div>
 
   <!-- New Payment Modal -->
-  <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+  <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="paymentModalLabel">Proceed to Payment</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="paymentEmail">Email</label>
-                        <input type="email" class="form-control" id="paymentEmail" placeholder="Re-enter your email">
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-primary" id="submitPayment">Pay</button>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="paymentModalLabel">Proceed to Payment</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="paymentEmail">Email</label>
+              <input type="email" class="form-control" id="paymentEmail" placeholder="Re-enter your email">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="submitPayment">Pay</button>
+        </div>
+      </div>
     </div>
   </div>
 </body>
+
 </html>
 
 <style>
   .form-check-label {
-    padding-left: 0.5rem; 
+    padding-left: 0.5rem;
   }
+
   .form-check-input {
-    vertical-align: middle; 
+    vertical-align: middle;
     margin-top: 0.6rem
   }
 </style>
 
 
 <script>
-    /*----------------------------------------------------*/
-/* Quote Loop
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Quote Loop
+  ------------------------------------------------------ */
 
-function fade($ele) {
-    $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
-        var $next = $(this).next('.quote');
-        fade($next.length > 0 ? $next : $(this).parent().children().first());
-   });
-}
-fade($('.quoteLoop > .quote').first());
+  function fade($ele) {
+    $ele.fadeIn(1000).delay(3000).fadeOut(1000, function () {
+      var $next = $(this).next('.quote');
+      fade($next.length > 0 ? $next : $(this).parent().children().first());
+    });
+  }
+  fade($('.quoteLoop > .quote').first());
 
 
-/*----------------------------------------------------*/
-/* Navigation
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Navigation
+  ------------------------------------------------------ */
 
-$(window).scroll(function() {
+  $(window).scroll(function () {
 
     if ($(window).scrollTop() > 300) {
-        $('.main_nav').addClass('sticky');
+      $('.main_nav').addClass('sticky');
     } else {
-        //$('.main_nav').removeClass('sticky');
+      //$('.main_nav').removeClass('sticky');
     }
-});
+  });
 
-// Mobile Navigation
-$('.mobile-toggle').click(function() {
+  // Mobile Navigation
+  $('.mobile-toggle').click(function () {
     if ($('.main_nav').hasClass('open-nav')) {
-        $('.main_nav').removeClass('open-nav');
+      $('.main_nav').removeClass('open-nav');
     } else {
-        $('.main_nav').addClass('open-nav');
+      $('.main_nav').addClass('open-nav');
     }
-});
+  });
 
-$('.main_nav li a').click(function() {
+  $('.main_nav li a').click(function () {
     if ($('.main_nav').hasClass('open-nav')) {
-        $('.navigation').removeClass('open-nav');
-        $('.main_nav').removeClass('open-nav');
+      $('.navigation').removeClass('open-nav');
+      $('.main_nav').removeClass('open-nav');
     }
-});
+  });
 
 
-/*----------------------------------------------------*/
-/* Smooth Scrolling
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Smooth Scrolling
+  ------------------------------------------------------ */
 
-jQuery(document).ready(function($) {
+  jQuery(document).ready(function ($) {
 
-   $('.smoothscroll').on('click',function (e) {
-	    e.preventDefault();
+    $('.smoothscroll').on('click', function (e) {
+      e.preventDefault();
 
-	    var target = this.hash,
-	    $target = $(target);
+      var target = this.hash,
+        $target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 800, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-  
-});
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 800, 'swing', function () {
+        window.location.hash = target;
+      });
+    });
 
-TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
+  });
+
+  TweenMax.staggerFrom(".heading", 0.8, { opacity: 0, y: 20, delay: 0.2 }, 0.4);
 </script>
-

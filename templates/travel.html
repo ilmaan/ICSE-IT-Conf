@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  SEET 2025</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'app/images/SEET_revmininb.png' %}">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js" ></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> SEET 2025</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'app/images/SEET_revmininb.png' %}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.8/typicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
 </head>
+
 <body>
-    <!-- Header Section
+  <!-- Header Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<nav class="navbar navbar-expand-lg navbar-light ">
-  <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav" style="width: 100%;">
-       <nav>
+  <nav class="navbar navbar-expand-lg navbar-light ">
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav" style="width: 100%;">
+        <nav>
           <ul>
             <li><a class="smoothscroll" href="/">Home</a></li>
-                <li><a class="smoothscroll" href="/">Tracks</a></li>
-                <li><a class="smoothscroll" href="/">key Dates</a></li>
-                <li><a class="smoothscroll" href="/">Committees</a></li>
-                <li><a class="smoothscroll" href="/submissions">Submissions</a></li>
-                <li><a class="smoothscroll" href="/registration">Registration</a></li>
-                <li><a class="smoothscroll" href="/travel">Travel & Venue</a></li>
-            
-          </ul>
-    </ul>
-  </div>
-</nav>
+            <li><a class="smoothscroll" href="/">Tracks</a></li>
+            <li><a class="smoothscroll" href="/">key Dates</a></li>
+            <li><a class="smoothscroll" href="/">Committees</a></li>
+            <li><a class="smoothscroll" href="/submissions">Submissions</a></li>
+            <li><a class="smoothscroll" href="/registration">Registration</a></li>
+            <li><a class="smoothscroll" href="/travel">Travel & Venue</a></li>
 
-<div class="headerlogo">
+          </ul>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="headerlogo">
     <img src="{% static 'app/images/SEET_rev2.png' %}" width="1000px" alt="">
-</div>
-<header id="header">
+  </div>
+  <header id="header">
     <!-- <div class="main_nav sticky">
       <div class="container-flex">
         <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
@@ -66,8 +76,8 @@
       </div>
     </div> -->
     <div class="title">
-    
-        <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+      <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="{% static 'app/images/csulbslider1.jpg' %}" width="1000px" height="600px" class="d-block " src="..." alt="First slide">
@@ -90,15 +100,16 @@
           </div> -->
 
 
-    
+
     </div>
     <a class="smoothscroll" href="#about">
-    <div class="scroll-down"></div>
-    </a> </header>
-    
+      <div class="scroll-down"></div>
+    </a>
+  </header>
+
   <!-- About Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-    
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <section id="about">
     <div class="container">
       <div class="aboutseet row">
@@ -106,36 +117,71 @@
         <div class="block"></div>
 
         <p>
-            The 1st International Conference on Software Engineering of Emerging Technologies (SEET-25) will be held at California State University Long Beach from August 11 to 12, 2025. 
-            <br>
-            <br>
-            <b>From Long Beach Airport:</b> <a style="margin-right: 50px;" href="https://maps.app.goo.gl/39LkV8qUNhLJE1C29"><img height="25px" width="25px" src="{% static 'app/images/googlemap.png' %}" width="1000px" alt=""></a>  
-            <!-- <br> -->
-            <b>From LAX Airport: </b><a href="https://maps.app.goo.gl/QfsJQ8BRXLcjrtbq9"><img height="25px" width="25px" src="{% static 'app/images/googlemap.png' %}" width="1000px" alt=""></a>
-            <br>
-            <br>
+          The 2nd International Conference on Software Engineering of Emerging Technologies (SEET-26) is scheduled to
+          take place at Penn State University, Behrend, Erie, Pennsylvania, USA from August 10 to 11, 2026.
+          <br>
+          Erie is a city in Northwestern Pennsylvania located on the south shore of Lake Erie, known for its role as
+          Pennsylvania's only Great Lakes port and its historical maritime connections, particularly the Battle of Lake
+          Erie and Commodore Oliver Hazard Perry's flagship, the U.S.S. Niagara. The city features numerous attractions,
+          including <a href="https://www.visitpa.com/listing/presque-isle-state-park/1689/" target="_blank">Presque Isle State Park</a>, 
+          <a href="https://waldameer.com/" target="_blank">Waldameer Park &amp; Water World</a>, 
+          Splash Lagoon Indoor Water Park, 
+          <a href="https://piboattours.com/" target="_blank">Presque Isle boat tour</a>, 
+          the Erie Art Museum, and a downtown cultural district.
+          Numerous attractions can be found within a 70-90 mile radius, including Niagara Falls, the Rock & Roll Hall of
+          Fame, the Cleveland Museum of Art, West Side Market, and the Cleveland Botanical Garden.
 
-Long Beach is a vibrant coastal city with the perfect sun, sand, and cultural mix. Its scenic shorelines, fresh seafood, and unique boutiques and cafes downtown add to its charm and inspiration. Discover iconic attractions like the historic Queen Mary, the Aquarium of the Pacific, and a lively arts scene. The city is strategically located and known as a leading destination for business, leisure, and entertainment.
+          <div class="container mb-3">
+            <div class="row">
+              <div class="col-md-6 mb-2 d-flex align-items-center">
+                <b class="mr-2">From Erie Airport:</b>
+                <a href="https://tinyurl.com/28sc5zdu" class="ml-1" target="_blank">
+                  <img height="25px" width="25px" src="{% static 'app/images/googlemap.png' %}" alt="Google Map">
+                </a>
+              </div>
+              <div class="col-md-6 mb-2 d-flex align-items-center">
+                <b class="mr-2">From Buffalo Niagara International Airport:</b>
+                <a href="https://tinyurl.com/yu37kjd8" class="ml-1" target="_blank">
+                  <img height="25px" width="25px" src="{% static 'app/images/googlemap.png' %}" alt="Google Map">
+                </a>
+              </div>
+              <div class="col-md-6 mb-2 d-flex align-items-center">
+                <b class="mr-2">From Cleveland Hopkins International Airport:</b>
+                <a href="https://tinyurl.com/5y37pnmk" class="ml-1" target="_blank">
+                  <img height="25px" width="25px" src="{% static 'app/images/googlemap.png' %}" alt="Google Map">
+                </a>
+              </div>
+              <div class="col-md-6 mb-2 d-flex align-items-center">
+                <b class="mr-2">From Pittsburgh International Airport:</b>
+                <a href="https://tinyurl.com/5d6t3bsw" class="ml-1" target="_blank">
+                  <img height="25px" width="25px" src="{% static 'app/images/googlemap.png' %}" alt="Google Map">
+                </a>
+              </div>
+            </div>
+          </div>
         </p>
 
         <!-- Program Schedule Section -->
-        <div class="container mt-4 mb-4">
+        <!-- <div class="container mt-4 mb-4">
           <div class="row">
             <div class="col-12 mb-3">
               <div class="card h-100 shadow-sm">
                 <div class="card-body">
                   <h5 class="card-title font-weight-bold">SEET 2025 Program Schedule</h5>
                   <p class="card-text mb-3">
-                    The detailed program schedule for SEET 2025 is now available. The conference will feature keynote presentations, technical sessions, workshops, and networking opportunities.
+                    The detailed program schedule for SEET 2025 is now available. The conference will feature keynote
+                    presentations, technical sessions, workshops, and networking opportunities.
                   </p>
                   <div class="row">
                     <div class="col-md-6 mb-2">
-                      <a href="{% static 'app/documents/SEET2025_Program.pdf' %}" target="_blank" class="btn btn-primary btn-block">
+                      <a href="{% static 'app/documents/SEET2025_Program.pdf' %}" target="_blank"
+                        class="btn btn-primary btn-block">
                         <i class="fas fa-eye"></i> Preview Schedule
                       </a>
                     </div>
                     <div class="col-md-6 mb-2">
-                      <a href="{% static 'app/documents/SEET2025_Program.pdf' %}" download class="btn btn-success btn-block">
+                      <a href="{% static 'app/documents/SEET2025_Program.pdf' %}" download
+                        class="btn btn-success btn-block">
                         <i class="fas fa-download"></i> Download PDF
                       </a>
                     </div>
@@ -149,112 +195,130 @@ Long Beach is a vibrant coastal city with the perfect sun, sand, and cultural mi
           </div>
         </div>
 
-<div class="container mt-4 mb-4">
-  <div class="row">
-    <div class="col-12 mb-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold">Recommended Hotel</h5>
-          <p class="card-text mb-1">
-            The following hotels are conveniently located near Long Beach Airport. Both hotels offer a complimentary shuttle service from Long Beach Airport. The hotel is a ten-minute drive from California State University, Long Beach.
-          </p>
-          <p class="card-text mb-1">
-            <b>From hotel to conference venue:</b> <a href="https://maps.app.goo.gl/bPBNC5zyhw3zyuQ18" target="_blank" rel="noopener noreferrer">View on Google Maps <img height="25px" width="25px" style="vertical-align:middle;" src="{% static 'app/images/googlemap.png' %}" alt="Google Map"></a>
-          </p>
-          <p class="card-text mb-1">
-            To avail of the discount rates, use the following links:
-            <br>
-            <a href="https://www.ihg.com/staybridge/hotels/us/en/long-beach/laxik/hoteldetail?fromRedirect=true&qSrt=sBR&qIta=99502056&icdv=99502056&qSlH=LAXIK&qCpid=100232924&qAAR=ILOIG&qRtP=ILOIG&setPMCookies=true&qSHBrC=SB&qDest=2680%20Lakewood%20Boulevard%2C%20Long%20Beach%2C%20CA%2C%20US&srb_u=1" target="_blank" rel="noopener noreferrer">Staybridge Inn</a><br>
-            <a href="https://www.ihg.com/holidayinn/hotels/us/en/long-beach/laxlb/hoteldetail?fromRedirect=true&qSrt=sBR&qIta=99502056&icdv=99502056&qSlH=LAXLB&qCpid=100232924&qAAR=ILOIG&qRtP=ILOIG&setPMCookies=true&qSHBrC=HI&qDest=2640%20North%20Lakewood%20Boulevard%2C%20Long%20Beach%2C%20CA%2C%20US&srb_u=1" target="_blank" rel="noopener noreferrer">Holiday Inn</a>
-          </p>
-          <p class="card-text text-muted" style="font-size: 0.95em;">
-            <em>*Please note that the discount is subject to availability at the time of booking and may not be offered during periods of high occupancy.</em>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-6 mb-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold">Conference Banquet</h5>
-          <p class="card-text mb-1">
-            The conference dinner will take place at <b>The Grand</b> (<a href="https://maps.app.goo.gl/6Qn1Qw1Qw1Qw1Qw1A" target="_blank">4101 E. Willow St., Long Beach, CA</a>) in the Garden Room on <b>Sunday, August 10th</b>.
-          </p>
-          <p class="card-text mb-1">
-            The reception is scheduled to start at <b>6 p.m.</b>
-          </p>
-          <p class="card-text">
-            The Grand is within walking distance of the hotel (<a href="https://www.ihg.com/holidayinn/hotels/us/en/long-beach/laxlb/hoteldetail?fromRedirect=true&qSrt=sBR&qIta=99502056&icdv=99502056&qSlH=LAXLB&qCpid=100232924&qAAR=ILOIG&qRtP=ILOIG&setPMCookies=true&qSHBrC=HI&qDest=2640%20North%20Lakewood%20Boulevard%2C%20Long%20Beach%2C%20CA%2C%20US&srb_u=1" target="_blank" rel="noopener noreferrer">Holiday Inn</a> / <a href="https://www.ihg.com/staybridge/hotels/us/en/long-beach/laxik/hoteldetail?fromRedirect=true&qSrt=sBR&qIta=99502056&icdv=99502056&qSlH=LAXIK&qCpid=100232924&qAAR=ILOIG&qRtP=ILOIG&setPMCookies=true&qSHBrC=SB&qDest=2680%20Lakewood%20Boulevard%2C%20Long%20Beach%2C%20CA%2C%20US&srb_u=1" target="_blank" rel="noopener noreferrer">Staybridge Inn</a>).
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-6 mb-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold">Conference Check-In</h5>
-          <p class="card-text mb-1">
-            Registrants can check in for the conference before dinner at The Grand or at the conference venue on the conference day.
-          </p>
-          <p class="card-text mb-1">
-            <b>Check-in for dinner</b> will start at <b>6:00 p.m.</b> in the Garden Room.
-          </p>
-          <p class="card-text">
-            <b>Check-in at the conference venue</b> will start at <b>7:00 a.m.</b> on the conference day.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 mb-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold">Conference Venue</h5>
-          <p class="card-text mb-1">
-            The conference will be held at the <b>College of Professional and Continuing Education, California State University, Long Beach</b> 
-            <a href="https://maps.app.goo.gl/VtyQTaUFa7CALKcQ8" target="_blank" rel="noopener noreferrer">
-              <img height="25px" width="25px" src="{% static 'app/images/googlemap.png' %}" alt="Google Map">
-            </a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 mb-3">
-      <div class="card h-100 shadow-sm">
-        <div class="card-body">
-          <h5 class="card-title font-weight-bold">Parking Details</h5>
-          <p class="card-text mb-1">
-            The participants can park their cars in <a href="https://maps.app.goo.gl/ecrQpC3z29W4VsJy7" target="_blank" rel="noopener noreferrer">Foundation Building Parking</a> 
-            <a href="https://maps.app.goo.gl/ecrQpC3z29W4VsJy7" target="_blank" rel="noopener noreferrer">
-              <img height="25px" width="25px" src="{% static 'app/images/googlemap.png' %}" alt="Google Map">
-            </a>. This is a paid parking lot, and participants are required to pay <b>$15</b> in cash at the entrance.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+        <div class="container mt-4 mb-4">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Recommended Hotel</h5>
+                  <p class="card-text mb-1">
+                    The following hotels are conveniently located near Long Beach Airport. Both hotels offer a
+                    complimentary shuttle service from Long Beach Airport. The hotel is a ten-minute drive from
+                    California State University, Long Beach.
+                  </p>
+                  <p class="card-text mb-1">
+                    <b>From hotel to conference venue:</b> <a href="https://maps.app.goo.gl/bPBNC5zyhw3zyuQ18"
+                      target="_blank" rel="noopener noreferrer">View on Google Maps <img height="25px" width="25px"
+                        style="vertical-align:middle;" src="{% static 'app/images/googlemap.png' %}"
+                        alt="Google Map"></a>
+                  </p>
+                  <p class="card-text mb-1">
+                    To avail of the discount rates, use the following links:
+                    <br>
+                    <a href="https://www.ihg.com/staybridge/hotels/us/en/long-beach/laxik/hoteldetail?fromRedirect=true&qSrt=sBR&qIta=99502056&icdv=99502056&qSlH=LAXIK&qCpid=100232924&qAAR=ILOIG&qRtP=ILOIG&setPMCookies=true&qSHBrC=SB&qDest=2680%20Lakewood%20Boulevard%2C%20Long%20Beach%2C%20CA%2C%20US&srb_u=1"
+                      target="_blank" rel="noopener noreferrer">Staybridge Inn</a><br>
+                    <a href="https://www.ihg.com/holidayinn/hotels/us/en/long-beach/laxlb/hoteldetail?fromRedirect=true&qSrt=sBR&qIta=99502056&icdv=99502056&qSlH=LAXLB&qCpid=100232924&qAAR=ILOIG&qRtP=ILOIG&setPMCookies=true&qSHBrC=HI&qDest=2640%20North%20Lakewood%20Boulevard%2C%20Long%20Beach%2C%20CA%2C%20US&srb_u=1"
+                      target="_blank" rel="noopener noreferrer">Holiday Inn</a>
+                  </p>
+                  <p class="card-text text-muted" style="font-size: 0.95em;">
+                    <em>*Please note that the discount is subject to availability at the time of booking and may not be
+                      offered during periods of high occupancy.</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Conference Banquet</h5>
+                  <p class="card-text mb-1">
+                    The conference dinner will take place at <b>The Grand</b> (<a
+                      href="https://maps.app.goo.gl/6Qn1Qw1Qw1Qw1Qw1A" target="_blank">4101 E. Willow St., Long Beach,
+                      CA</a>) in the Garden Room on <b>Sunday, August 10th</b>.
+                  </p>
+                  <p class="card-text mb-1">
+                    The reception is scheduled to start at <b>6 p.m.</b>
+                  </p>
+                  <p class="card-text">
+                    The Grand is within walking distance of the hotel (<a
+                      href="https://www.ihg.com/holidayinn/hotels/us/en/long-beach/laxlb/hoteldetail?fromRedirect=true&qSrt=sBR&qIta=99502056&icdv=99502056&qSlH=LAXLB&qCpid=100232924&qAAR=ILOIG&qRtP=ILOIG&setPMCookies=true&qSHBrC=HI&qDest=2640%20North%20Lakewood%20Boulevard%2C%20Long%20Beach%2C%20CA%2C%20US&srb_u=1"
+                      target="_blank" rel="noopener noreferrer">Holiday Inn</a> / <a
+                      href="https://www.ihg.com/staybridge/hotels/us/en/long-beach/laxik/hoteldetail?fromRedirect=true&qSrt=sBR&qIta=99502056&icdv=99502056&qSlH=LAXIK&qCpid=100232924&qAAR=ILOIG&qRtP=ILOIG&setPMCookies=true&qSHBrC=SB&qDest=2680%20Lakewood%20Boulevard%2C%20Long%20Beach%2C%20CA%2C%20US&srb_u=1"
+                      target="_blank" rel="noopener noreferrer">Staybridge Inn</a>).
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Conference Check-In</h5>
+                  <p class="card-text mb-1">
+                    Registrants can check in for the conference before dinner at The Grand or at the conference venue on
+                    the conference day.
+                  </p>
+                  <p class="card-text mb-1">
+                    <b>Check-in for dinner</b> will start at <b>6:00 p.m.</b> in the Garden Room.
+                  </p>
+                  <p class="card-text">
+                    <b>Check-in at the conference venue</b> will start at <b>7:00 a.m.</b> on the conference day.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Conference Venue</h5>
+                  <p class="card-text mb-1">
+                    The conference will be held at the <b>College of Professional and Continuing Education, California
+                      State University, Long Beach</b>
+                    <a href="https://maps.app.goo.gl/VtyQTaUFa7CALKcQ8" target="_blank" rel="noopener noreferrer">
+                      <img height="25px" width="25px" src="{% static 'app/images/googlemap.png' %}" alt="Google Map">
+                    </a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Parking Details</h5>
+                  <p class="card-text mb-1">
+                    The participants can park their cars in <a href="https://maps.app.goo.gl/ecrQpC3z29W4VsJy7"
+                      target="_blank" rel="noopener noreferrer">Foundation Building Parking</a>
+                    <a href="https://maps.app.goo.gl/ecrQpC3z29W4VsJy7" target="_blank" rel="noopener noreferrer">
+                      <img height="25px" width="25px" src="{% static 'app/images/googlemap.png' %}" alt="Google Map">
+                    </a>. This is a paid parking lot, and participants are required to pay <b>$15</b> in cash at the
+                    entrance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
 
       </div>
 
 
-      
-     
+
+
     </div>
 
-   
+
 
 
 
 
   </section>
-  
- 
-  
-  
+
+
+
+
   <!-- Footer Section
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
-  
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <footer>
     <div class="container">
       <div class="nine columns">
@@ -263,7 +327,7 @@ Long Beach is a vibrant coastal city with the perfect sun, sand, and cultural mi
         <br>
         We’d love to hear from you.
         <br>
-        SEET 2025 Conference Secretariat 
+        SEET 2026 Conference Secretariat
         <br>
         <a style="color: black;" href="mailto: seet@sw-conf.com">seet@sw-conf.com</a>
       </div>
@@ -271,77 +335,77 @@ Long Beach is a vibrant coastal city with the perfect sun, sand, and cultural mi
     </div>
   </footer>
 </body>
+
 </html>
 
 <style></style>
 
 
 <script>
-    /*----------------------------------------------------*/
-/* Quote Loop
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Quote Loop
+  ------------------------------------------------------ */
 
-function fade($ele) {
-    $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
-        var $next = $(this).next('.quote');
-        fade($next.length > 0 ? $next : $(this).parent().children().first());
-   });
-}
-fade($('.quoteLoop > .quote').first());
+  function fade($ele) {
+    $ele.fadeIn(1000).delay(3000).fadeOut(1000, function () {
+      var $next = $(this).next('.quote');
+      fade($next.length > 0 ? $next : $(this).parent().children().first());
+    });
+  }
+  fade($('.quoteLoop > .quote').first());
 
 
-/*----------------------------------------------------*/
-/* Navigation
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Navigation
+  ------------------------------------------------------ */
 
-$(window).scroll(function() {
+  $(window).scroll(function () {
 
     if ($(window).scrollTop() > 300) {
-        $('.main_nav').addClass('sticky');
+      $('.main_nav').addClass('sticky');
     } else {
-        //$('.main_nav').removeClass('sticky');
+      //$('.main_nav').removeClass('sticky');
     }
-});
+  });
 
-// Mobile Navigation
-$('.mobile-toggle').click(function() {
+  // Mobile Navigation
+  $('.mobile-toggle').click(function () {
     if ($('.main_nav').hasClass('open-nav')) {
-        $('.main_nav').removeClass('open-nav');
+      $('.main_nav').removeClass('open-nav');
     } else {
-        $('.main_nav').addClass('open-nav');
+      $('.main_nav').addClass('open-nav');
     }
-});
+  });
 
-$('.main_nav li a').click(function() {
+  $('.main_nav li a').click(function () {
     if ($('.main_nav').hasClass('open-nav')) {
-        $('.navigation').removeClass('open-nav');
-        $('.main_nav').removeClass('open-nav');
+      $('.navigation').removeClass('open-nav');
+      $('.main_nav').removeClass('open-nav');
     }
-});
+  });
 
 
-/*----------------------------------------------------*/
-/* Smooth Scrolling
------------------------------------------------------- */
+  /*----------------------------------------------------*/
+  /* Smooth Scrolling
+  ------------------------------------------------------ */
 
-jQuery(document).ready(function($) {
+  jQuery(document).ready(function ($) {
 
-   $('.smoothscroll').on('click',function (e) {
-	    e.preventDefault();
+    $('.smoothscroll').on('click', function (e) {
+      e.preventDefault();
 
-	    var target = this.hash,
-	    $target = $(target);
+      var target = this.hash,
+        $target = $(target);
 
-	    $('html, body').stop().animate({
-	        'scrollTop': $target.offset().top
-	    }, 800, 'swing', function () {
-	        window.location.hash = target;
-	    });
-	});
-  
-});
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top
+      }, 800, 'swing', function () {
+        window.location.hash = target;
+      });
+    });
+
+  });
 
 
-TweenMax.staggerFrom(".heading", 0.8, {opacity: 0, y: 20, delay: 0.2}, 0.4);
+  TweenMax.staggerFrom(".heading", 0.8, { opacity: 0, y: 20, delay: 0.2 }, 0.4);
 </script>
-
