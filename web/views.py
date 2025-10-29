@@ -173,7 +173,7 @@ def create_checkout_session(request):
     extra_fee = extra_papers * 500
     total_amount = base_fee + extra_fee
 
-    domain_url = 'https://seet25.sw-conf.com/'
+    domain_url = 'https://seet26.sw-conf.com/'
     stripe.api_key = settings.STRIPE_SECRET_KEY
     try:
         checkout_session = stripe.checkout.Session.create(
@@ -188,7 +188,7 @@ def create_checkout_session(request):
                     'product_data': {
                         'name': 'Conference Registration Fee',
                         'description': 'The International Conference on Software Engineering of Emerging Technologies (SEET-2025) will serve as a premier global forum for engineers and scientists from industry and academia to showcase ongoing work, share research insights and experiences, and discuss effective Software Engineering practices.',
-                       'images': ['https://seet25.sw-conf.com/static/app/images/SEET_rev2.png']
+                       'images': ['https://seet26.sw-conf.com/static/app/images/SEET_rev2.png']
                     },
                     'unit_amount': total_amount * 100,
                     'tax_behavior': 'exclusive',
