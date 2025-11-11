@@ -32,8 +32,8 @@ STRIPE_ENDPOINT_SECRET= env('STRIPE_ENDPOINT_SECRET')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ["seet26.sw-conf.com"]
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ["seet26.sw-conf.com"]
+#ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
