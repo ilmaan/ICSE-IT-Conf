@@ -131,6 +131,8 @@
           <b>SRC Registration:</b> $650.00 *
           <br>
           <b>Attendee/ Non-Author Registration:</b> $550.00 *
+          <br>
+          <b>PhD Research Track:</b> $400.00 *
         </p>
       </div>
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal" > 
@@ -437,40 +439,64 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" action="{% url 'registration_info' %}">
+          <form method="post" action="{% url 'registration_info' %}" id="mainRegistrationForm">
             {% csrf_token %}
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="registrationType" id="student" value="student" checked>
-              <label class="form-check-label" for="student">Student</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="registrationType" id="nonStudent" value="nonStudent">
-              <label class="form-check-label" for="nonStudent">Non-Student</label>
+            <div class="form-group">
+              <label>Registration type</label>
+              <div class="form-check">
+                <input class="form-check-input registration-type" type="radio" name="registrationType" id="typeRegular" value="regular" checked>
+                <label class="form-check-label" for="typeRegular">Regular Registration — $750.00</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input registration-type" type="radio" name="registrationType" id="typeSrc" value="src">
+                <label class="form-check-label" for="typeSrc">SRC Registration — $650.00</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input registration-type" type="radio" name="registrationType" id="typeAttendee" value="attendee">
+                <label class="form-check-label" for="typeAttendee">Attendee / Non-Author Registration — $550.00</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input registration-type" type="radio" name="registrationType" id="typePhd" value="phd">
+                <label class="form-check-label" for="typePhd">PhD Research Track — $400.00</label>
+              </div>
             </div>
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
             </div>
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
-              <small class="form-text text-muted">Note: Only register once with a single email address and use same
-                email to pay.</small>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+              <small class="form-text text-muted">Register once with a single email and use the same email to pay.</small>
             </div>
-            <div class="form-group">
-              <label for="numberOfPapers">Number of Papers Accepted</label>
-              <input type="number" class="form-control" id="numberOfPapers" name="numberOfPapers"
-                placeholder="Enter number of papers accepted" min="1" required>
-            </div>
-            <div id="paperDetailsContainer">
-              <div class="form-group paper-details">
-                <label for="paperDetails1">Paper Details (Paper ID - Paper Title)</label>
-                <input type="text" class="form-control" id="paperDetails1" name="paperDetails1"
-                  placeholder="Enter as: PaperID, Paper Title">
-                <small class="form-text text-muted">Multiple papers: Paper-1 ID, Paper-1 Title, Paper-2 ID, Paper-2
-                  Title</small>
+            <div id="phdFields" style="display: none;">
+              <div class="form-group">
+                <label for="affiliation">University / Affiliation</label>
+                <input type="text" class="form-control" id="affiliation" name="affiliation"
+                  placeholder="Enter your university or affiliation">
+              </div>
+              <div class="form-group">
+                <label for="phdPaperDetails">Research topic or paper ID (optional)</label>
+                <input type="text" class="form-control" id="phdPaperDetails" name="paperDetails1"
+                  placeholder="Research topic or accepted paper ID">
               </div>
             </div>
+            <div id="authorPaperFields">
+              <div class="form-group">
+                <label for="numberOfPapers">Number of Papers Accepted</label>
+                <input type="number" class="form-control" id="numberOfPapers" name="numberOfPapers"
+                  placeholder="Enter number of papers accepted" min="1" value="1">
+              </div>
+              <div id="paperDetailsContainer">
+                <div class="form-group paper-details">
+                  <label for="paperDetails1">Paper Details (Paper ID - Paper Title)</label>
+                  <input type="text" class="form-control" id="paperDetails1" name="paperDetails1"
+                    placeholder="Enter as: PaperID, Paper Title">
+                  <small class="form-text text-muted">Multiple papers: Paper-1 ID, Paper-1 Title, Paper-2 ID, Paper-2 Title</small>
+                </div>
+              </div>
+            </div>
+            <p class="text-muted mb-0" id="selectedFeeNote">Selected fee: <strong>$750.00</strong></p>
           </form>
         </div>
         <div class="modal-footer">
@@ -524,6 +550,18 @@
   }
 </style>
 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".registration-type").forEach(function (input) {
+      input.addEventListener("change", function () {
+        if (typeof updateMainRegistrationUi === "function") {
+          updateMainRegistrationUi();
+        }
+      });
+    });
+  });
+</script>
 
 <script>
   /*----------------------------------------------------*/

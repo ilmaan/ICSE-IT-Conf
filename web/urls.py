@@ -8,6 +8,7 @@ urlpatterns = [
     path('submissions',views.submissions,name='submissions'),
     path('travel',views.travel,name='travel'),
     path('registration',views.registration,name='registration'),
+    path('registration/supplementary/<str:token>/', views.registration_secondary, name='registration_secondary'),
     path('tbd',views.tbd,name='tbd'),
     path('unsubscribe',views.unsubscribe,name='unsubscribe'),
     path('subscribe',views.subscribe,name='subscribe'),

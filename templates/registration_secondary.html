@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supplementary Registration — SEET 2026</title>
+  <link rel="icon" type="image/x-icon" href="{% static 'app/images/SEET_revmininb.png' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="{% static 'main.js' %}"></script>
+  <link rel="stylesheet" href="{% static 'app/css/home.css' %}">
+</head>
+
+<body>
+  <div class="headerlogo">
+    <img src="{% static 'app/images/SEET_rev2.png' %}" width="1000px" alt="SEET 2026">
+  </div>
+
+  <section id="about" style="padding: 40px 0;">
+    <div class="container">
+      <div class="aboutseet">
+        <h1>Supplementary Registration</h1>
+        <p>Registration fee: <strong>${{ fee }}.00</strong>. Please complete the form below, then proceed to payment with the same email address.</p>
+        <p><a href="{% url 'registration' %}">Return to main registration page</a></p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">
+          Register &amp; Pay
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Supplementary Registration — ${{ fee }}.00</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="{% url 'registration_info' %}" id="secondaryRegistrationForm" data-registration-flow="secondary">
+            {% csrf_token %}
+            <input type="hidden" name="registrationType" value="secondary">
+            <input type="hidden" name="supplementaryToken" value="{{ supplementary_token }}">
+            <input type="hidden" name="numberOfPapers" value="0">
+            <div class="form-group">
+              <label for="name">Full name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="affiliation">Affiliation / Organization</label>
+              <input type="text" class="form-control" id="affiliation" name="affiliation" required>
+            </div>
+            <div class="form-group">
+              <label for="paperDetails1">Additional information (optional)</label>
+              <textarea class="form-control" id="paperDetails1" name="paperDetails1" rows="3"
+                placeholder="Any details we should know for your registration"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-toggle="modal" data-target="#paymentModal" data-dismiss="modal" style="margin-right: auto;">Already registered?</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" id="submitPay">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="paymentModalLabel">Proceed to Payment — ${{ fee }}.00</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="paymentEmail">Email</label>
+            <input type="email" class="form-control" id="paymentEmail" placeholder="Re-enter your email">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="submitPayment">Pay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
