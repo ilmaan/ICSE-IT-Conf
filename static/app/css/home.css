@@ -785,11 +785,17 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 
 
 
+.row.tpc-row {
+	justify-content: flex-start;
+}
+
 .techthree.columns {
-	flex: 1 1 calc(33.333% - 20px);
+	flex: 0 0 33.333%;
+	max-width: 33.333%;
 	box-sizing: border-box;
-	margin: 5px;
+	margin: 5px 0;
 	padding: 5px;
+	margin-left: 0 !important;
 	/* background-color: #f9f9f9; */
 	/* border: 1px solid #ddd; */
 	/* border-radius: 5px; */
